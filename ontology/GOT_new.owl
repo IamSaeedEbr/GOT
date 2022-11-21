@@ -1,0 +1,969 @@
+@prefix : <http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/saeed/ontologies/2022/10/GOT> .
+
+<http://www.semanticweb.org/saeed/ontologies/2022/10/GOT> rdf:type owl:Ontology ;
+                                                           owl:versionIRI <http://www.semanticweb.org/saeed/ontologies/2022/10/GOT> ;
+                                                           owl:imports <http://xmlns.com/foaf/0.1/> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#appearedIn
+:appearedIn rdf:type owl:ObjectProperty ;
+            rdfs:domain :Character ;
+            rdfs:range :Book .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#attackerCommanderOf
+:attackerCommanderOf rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :defenderCommanderOf ;
+                     rdfs:domain :Character ;
+                     rdfs:range :Battle .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#attackerHouseIn
+:attackerHouseIn rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :defenderHouseIn ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:domain :House ;
+                 rdfs:range :Battle .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#attackerKingOf
+:attackerKingOf rdf:type owl:ObjectProperty ;
+                owl:inverseOf :defenderKingOf ;
+                rdfs:domain :Character ;
+                rdfs:range :Battle ;
+                owl:propertyDisjointWith :defenderCommanderOf ,
+                                         :defenderKingOf .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#defenderCommanderOf
+:defenderCommanderOf rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Character ;
+                     rdfs:range :Battle .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#defenderHouseIn
+:defenderHouseIn rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :House ;
+                 rdfs:range :Battle .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#defenderKingOf
+:defenderKingOf rdf:type owl:ObjectProperty ;
+                rdfs:domain :Character ;
+                rdfs:range :Battle .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#fatherOf
+:fatherOf rdf:type owl:ObjectProperty ,
+                   owl:InverseFunctionalProperty ,
+                   owl:AsymmetricProperty ,
+                   owl:IrreflexiveProperty ;
+          rdfs:domain :Character ;
+          rdfs:range :Character ;
+          owl:propertyDisjointWith :motherOf ,
+                                   :spouseOf .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#founderOf
+:founderOf rdf:type owl:ObjectProperty ;
+           owl:inverseOf :hasFounder ;
+           rdf:type owl:FunctionalProperty ,
+                    owl:InverseFunctionalProperty ;
+           rdfs:domain :Character ;
+           rdfs:range :House .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#hasFounder
+:hasFounder rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ,
+                     owl:InverseFunctionalProperty ;
+            rdfs:domain :House ;
+            rdfs:range :Character .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#hasHouse
+:hasHouse rdf:type owl:ObjectProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Character ;
+          rdfs:range :House .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#heirOf
+:heirOf rdf:type owl:ObjectProperty ,
+                 owl:InverseFunctionalProperty ,
+                 owl:AsymmetricProperty ,
+                 owl:IrreflexiveProperty ;
+        rdfs:domain :Character ;
+        rdfs:range :Character .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#isAbout
+:isAbout rdf:type owl:ObjectProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain :WikidataProfile ;
+         rdfs:range :Character .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#locatedIn
+:locatedIn rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :Battle ;
+           rdfs:range :Region .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#motherOf
+:motherOf rdf:type owl:ObjectProperty ,
+                   owl:InverseFunctionalProperty ,
+                   owl:AsymmetricProperty ,
+                   owl:IrreflexiveProperty ;
+          rdfs:domain :Character ;
+          rdfs:range :Character ;
+          owl:propertyDisjointWith :spouseOf .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#occurredIn
+:occurredIn rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Battle ;
+            rdfs:range :Region .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#spouseOf
+:spouseOf rdf:type owl:ObjectProperty ,
+                   owl:SymmetricProperty ,
+                   owl:IrreflexiveProperty ;
+          rdfs:domain :Character ;
+          rdfs:range :Character .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#age
+:age rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Character ;
+     rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#attackerOutcome
+:attackerOutcome rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Battle ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#attackerSize
+:attackerSize rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Battle ;
+              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#battleType
+:battleType rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Battle ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#birthDate
+:birthDate rdf:type owl:DatatypeProperty ;
+           rdfs:domain <http://www.w3.org/2000/10/swap/pim/contact#Person> ;
+           rdfs:range xsd:integer ;
+           rdfs:comment "The maesters of the Citadel who keep the histories of Westeros have used Aegon's Conquest as their touchstone for the past three hundred years. Birth, deaths, battles, and other events are dated either AC (After the Conquest) [positive values in dataset] or BC (Before the Conquest) [negative values]."^^xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#blazon
+:blazon rdf:type owl:DatatypeProperty ;
+        rdfs:domain :House ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#culture
+:culture rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Character ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#deathDate
+:deathDate rdf:type owl:DatatypeProperty ;
+           rdfs:domain <http://www.w3.org/2000/10/swap/pim/contact#Person> ;
+           rdfs:range xsd:integer ;
+           rdfs:comment "The maesters of the Citadel who keep the histories of Westeros have used Aegon's Conquest as their touchstone for the past three hundred years. Birth, deaths, battles, and other events are dated either AC (After the Conquest) [positive values in dataset] or BC (Before the Conquest) [negative values]."^^xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#defenderSize
+:defenderSize rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Battle ;
+              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#gender
+:gender rdf:type owl:DatatypeProperty ;
+        rdfs:domain <http://www.w3.org/2000/10/swap/pim/contact#Person> ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#isAlive
+:isAlive rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Character ;
+         rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#isNoble
+:isNoble rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Character ;
+         rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#isPopular
+:isPopular rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Character ;
+           rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#location
+:location rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Battle ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain [ rdf:type owl:Class ;
+                    owl:unionOf ( :Battle
+                                  :House
+                                  :Region
+                                  <http://www.w3.org/2000/10/swap/pim/contact#Person>
+                                )
+                  ] ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#outcome
+:outcome rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Battle ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#popularity
+:popularity rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Character ;
+            rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#sigil
+:sigil rdf:type owl:DatatypeProperty ;
+       rdfs:domain :House ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Character ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#year
+:year rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Battle ;
+      rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Battle
+:Battle rdf:type owl:Class ;
+        owl:disjointWith :Book ,
+                         :Character ,
+                         :House ,
+                         :Region .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Book
+:Book rdf:type owl:Class ;
+      owl:disjointWith :Character ,
+                       :House ,
+                       :Region .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Character
+:Character rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.w3.org/2000/10/swap/pim/contact#Person> ;
+           owl:disjointWith :House ,
+                            :Region .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House
+:House rdf:type owl:Class ;
+       owl:disjointWith :Region .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Region
+:Region rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#WikidataProfile
+:WikidataProfile rdf:type owl:Class .
+
+
+###  http://www.w3.org/2000/10/swap/pim/contact#Person
+<http://www.w3.org/2000/10/swap/pim/contact#Person> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Andals
+:Andals rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Antler_Men
+:Antler_Men rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Astapori
+:Astapori rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Band_of_Nine
+:Band_of_Nine rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Beyond_the_Wall
+:Beyond_the_Wall rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Black_Ears
+:Black_Ears rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Blacks
+:Blacks rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Book1
+:Book1 rdf:type owl:NamedIndividual ,
+                :Book .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Book2
+:Book2 rdf:type owl:NamedIndividual ,
+                :Book .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Book3
+:Book3 rdf:type owl:NamedIndividual ,
+                :Book .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Book4
+:Book4 rdf:type owl:NamedIndividual ,
+                :Book .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Book5
+:Book5 rdf:type owl:NamedIndividual ,
+                :Book .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Braavosi
+:Braavosi rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Brave_Companions
+:Brave_Companions rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Brotherhood_Without_Banners
+:Brotherhood_Without_Banners rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Burned_Men
+:Burned_Men rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Citadel
+:Citadel rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Company_of_the_Cat
+:Company_of_the_Cat rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Crannogmen
+:Crannogmen rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Dornishmen
+:Dornishmen rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Dothraki
+:Dothraki rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Drowned_men
+:Drowned_men rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Faceless_Men
+:Faceless_Men rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Faith_of_the_Seven
+:Faith_of_the_Seven rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#First_Men
+:First_Men rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Free_Folk
+:Free_Folk rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Ghiscari
+:Ghiscari rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Golden_Company
+:Golden_Company rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Good_Masters
+:Good_Masters rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Graces
+:Graces rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Happy_Port
+:Happy_Port rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Allyrion
+:House_Allyrion rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Ambrose
+:House_Ambrose rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Arryn
+:House_Arryn rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Ashford
+:House_Ashford rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Baelish
+:House_Baelish rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Ball
+:House_Ball rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Banefort
+:House_Banefort rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Bar_Emmon
+:House_Bar_Emmon rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Baratheon
+:House_Baratheon rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Baratheon_of_Dragonstone
+:House_Baratheon_of_Dragonstone rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Beesbury
+:House_Beesbury rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Belmore
+:House_Belmore rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Bettley
+:House_Bettley rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Blackbar
+:House_Blackbar rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Blackberry
+:House_Blackberry rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Blackfyre
+:House_Blackfyre rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Blackmont
+:House_Blackmont rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Blacktyde
+:House_Blacktyde rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Blackwood
+:House_Blackwood rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Blanetree
+:House_Blanetree rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Blount
+:House_Blount rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Boggs
+:House_Boggs rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Bolling
+:House_Bolling rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Bolton
+:House_Bolton rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Bolton_of_the_Dreadfort
+:House_Bolton_of_the_Dreadfort rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Borrell
+:House_Borrell rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Botley
+:House_Botley rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Bracken
+:House_Bracken rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Brax
+:House_Brax rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Broom
+:House_Broom rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Brune_of_Brownhollow
+:House_Brune_of_Brownhollow rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Brune_of_the_Dyre_Den
+:House_Brune_of_the_Dyre_Den rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Buckler
+:House_Buckler rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Bulwer
+:House_Bulwer rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Bushy
+:House_Bushy rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Butterwell
+:House_Butterwell rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Byrch
+:House_Byrch rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Bywater
+:House_Bywater rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Cafferen
+:House_Cafferen rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Caron
+:House_Caron rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Cassel
+:House_Cassel rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Caswell
+:House_Caswell rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Celtigar
+:House_Celtigar rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Cerwyn
+:House_Cerwyn rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Charlton
+:House_Charlton rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Chelsted
+:House_Chelsted rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Chester
+:House_Chester rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Chyttering
+:House_Chyttering rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Clegane
+:House_Clegane rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Clifton
+:House_Clifton rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Cockshaw
+:House_Cockshaw rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Codd
+:House_Codd rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Coldwater
+:House_Coldwater rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Cole
+:House_Cole rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Condon
+:House_Condon rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Conklyn
+:House_Conklyn rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Connington
+:House_Connington rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Corbray
+:House_Corbray rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Costayne
+:House_Costayne rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Cox
+:House_Cox rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Crabb
+:House_Crabb rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Crakehall
+:House_Crakehall rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Crane
+:House_Crane rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Cupps
+:House_Cupps rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Cuy
+:House_Cuy rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Dalt
+:House_Dalt rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Darklyn
+:House_Darklyn rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Darry
+:House_Darry rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Dayne
+:House_Dayne rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Dayne_of_High_Hermitage
+:House_Dayne_of_High_Hermitage rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Deddings
+:House_Deddings rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Dondarrion
+:House_Dondarrion rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Drinkwater
+:House_Drinkwater rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Drumm
+:House_Drumm rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Dustin
+:House_Dustin rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Egen
+:House_Egen rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Erenford
+:House_Erenford rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Errol
+:House_Errol rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Estermont
+:House_Estermont rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Estren
+:House_Estren rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Farman
+:House_Farman rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Farring
+:House_Farring rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Farrow
+:House_Farrow rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Farwynd
+:House_Farwynd rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Farwynd_of_the_Lonely_Light
+:House_Farwynd_of_the_Lonely_Light rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Fell
+:House_Fell rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Flint
+:House_Flint rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Florent
+:House_Florent rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Foote
+:House_Foote rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Fossoway
+:House_Fossoway rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Fossoway_of_Cider_Hall
+:House_Fossoway_of_Cider_Hall rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Fossoway_of_New_Barrel
+:House_Fossoway_of_New_Barrel rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Fowler
+:House_Fowler rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Frey
+:House_Frey rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Frey_of_Riverrun
+:House_Frey_of_Riverrun rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Gargalen
+:House_Gargalen rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Ibbenese
+:Ibbenese rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Ironborn
+:Ironborn rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Lhazarene
+:Lhazarene rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Lyseni
+:Lyseni rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Meereenese
+:Meereenese rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Myrish
+:Myrish rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Naathi
+:Naathi rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Northern_mountain_clans
+:Northern_mountain_clans rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Northmen
+:Northmen rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Norvoshi
+:Norvoshi rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Pentoshi
+:Pentoshi rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Qartheen
+:Qartheen rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Qohor
+:Qohor rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Rivermen
+:Rivermen rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Summer_Isles
+:Summer_Isles rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#The_Crownlands
+:The_Crownlands rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#The_North
+:The_North rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#The_Reach
+:The_Reach rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#The_Riverlands
+:The_Riverlands rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#The_Stormlands
+:The_Stormlands rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#The_Westerlands
+:The_Westerlands rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Tyroshi
+:Tyroshi rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Vale_mountain_clans
+:Vale_mountain_clans rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Valyrian
+:Valyrian rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Westermen
+:Westermen rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Westerosi
+:Westerosi rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Alchemists'_Guild
+<http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Alchemists'_Guild> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Asshai'i
+<http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Asshai'i> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Chataya's_brothel
+<http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Chataya's_brothel> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#City_Watch_of_King's_Landing
+<http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#City_Watch_of_King's_Landing> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Baratheon_of_King's_Landing
+<http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Baratheon_of_King's_Landing> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Flint_of_Wido's_Watch
+<http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House_Flint_of_Wido's_Watch> rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
