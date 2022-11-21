@@ -2,683 +2,18 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-got:battle0 a got:Battle ;
-    got:attackerCommander got:character766 ;
-    got:attackerHouse got:house336 ;
-    got:attackerKing got:character1928,
-        got:character985 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:battleType "ambush"^^xsd:string ;
-    got:defenderCommander got:character284 ;
-    got:defenderHouse got:house23 ;
-    got:defenderKing got:character1656 ;
-    got:defenderSize 120 ;
-    got:location "Mummer's Ford"^^xsd:string ;
-    got:name "Battle at the Mummer's Ford"^^xsd:string ;
-    got:occurredIn got:region20 ;
-    got:year 298 .
+got:character0 a got:Character ;
+    got:attackerCommanderOf got:battle13 ;
+    got:defenderCommanderOf got:battle15 ;
+    got:name " Addam Marbrand"^^xsd:string .
 
-got:battle1 a got:Battle ;
-    got:attackerCommander got:character1240,
-        got:character17,
-        got:character32,
-        got:character46,
-        got:character50 ;
-    got:attackerHouse got:house215,
-        got:house227,
-        got:house588 ;
-    got:attackerKing got:character1834 ;
-    got:attackerOutcome "loss"^^xsd:string ;
-    got:attackerSize 100000 ;
-    got:battleType "siege"^^xsd:string ;
-    got:defenderCommander got:character10,
-        got:character1834,
-        got:character24,
-        got:character8 ;
-    got:defenderHouse got:house23,
-        got:house420 ;
-    got:defenderKing got:character1240 ;
-    got:defenderSize 1240 ;
-    got:location "Castle Black"^^xsd:string ;
-    got:name "Battle of Castle Black"^^xsd:string ;
-    got:occurredIn got:region0 ;
-    got:year 300 .
+got:character1 a got:Character ;
+    got:attackerCommanderOf got:battle22 ;
+    got:name " Alysane Mormot"^^xsd:string .
 
-got:battle10 a got:Battle ;
-    got:attackerHouse got:house73 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:battleType "pitched battle"^^xsd:string ;
-    got:defenderHouse got:house63 ;
-    got:name "Battle of the Burning Septry"^^xsd:string ;
-    got:occurredIn got:region20 ;
-    got:year 299 .
-
-got:battle11 a got:Battle ;
-    got:attackerCommander got:character1656,
-        got:character47,
-        got:character5 ;
-    got:attackerHouse got:house542,
-        got:house603 ;
-    got:attackerKing got:character1656 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:attackerSize 6000 ;
-    got:battleType "ambush"^^xsd:string ;
-    got:defenderCommander got:character1145,
-        got:character12 ;
-    got:defenderHouse got:house336 ;
-    got:defenderKing got:character1928,
-        got:character985 ;
-    got:defenderSize 12625 ;
-    got:location "Riverrun"^^xsd:string ;
-    got:name "Battle of the Camps"^^xsd:string ;
-    got:occurredIn got:region20 ;
-    got:year 298 .
-
-got:battle12 a got:Battle ;
-    got:attackerCommander got:character1656,
-        got:character4,
-        got:character44 ;
-    got:attackerHouse got:house542 ;
-    got:attackerKing got:character1656 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:attackerSize 6000 ;
-    got:battleType "ambush"^^xsd:string ;
-    got:defenderCommander got:character1705 ;
-    got:defenderHouse got:house336 ;
-    got:defenderKing got:character1928,
-        got:character985 ;
-    got:location "Crag"^^xsd:string ;
-    got:name "Battle of the Crag"^^xsd:string ;
-    got:occurredIn got:region28 ;
-    got:year 299 .
-
-got:battle13 a got:Battle ;
-    got:attackerCommander got:character0,
-        got:character11,
-        got:character14,
-        got:character1982,
-        got:character27,
-        got:character30 ;
-    got:attackerHouse got:house336 ;
-    got:attackerKing got:character1928,
-        got:character985 ;
-    got:attackerOutcome "loss"^^xsd:string ;
-    got:attackerSize 20000 ;
-    got:battleType "pitched battle"^^xsd:string ;
-    got:defenderCommander got:character23,
-        got:character25,
-        got:character593 ;
-    got:defenderHouse got:house603 ;
-    got:defenderKing got:character1656 ;
-    got:defenderSize 10000 ;
-    got:location "Red Fork"^^xsd:string ;
-    got:name "Battle of the Fords"^^xsd:string ;
-    got:occurredIn got:region20 ;
-    got:year 299 .
-
-got:battle14 a got:Battle ;
-    got:attackerCommander got:character934 ;
-    got:attackerHouse got:house336 ;
-    got:attackerKing got:character1928,
-        got:character985 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:attackerSize 15000 ;
-    got:battleType "pitched battle"^^xsd:string ;
-    got:defenderCommander got:character413,
-        got:character49 ;
-    got:defenderHouse got:house603 ;
-    got:defenderKing got:character1656 ;
-    got:defenderSize 4000 ;
-    got:location "Golden Tooth"^^xsd:string ;
-    got:name "Battle of the Golden Tooth"^^xsd:string ;
-    got:occurredIn got:region28 ;
-    got:year 298 .
-
-got:battle15 a got:Battle ;
-    got:attackerCommander got:character16,
-        got:character1716,
-        got:character18,
-        got:character34,
-        got:character54 ;
-    got:attackerHouse got:house542 ;
-    got:attackerKing got:character1656 ;
-    got:attackerOutcome "loss"^^xsd:string ;
-    got:attackerSize 18000 ;
-    got:battleType "pitched battle"^^xsd:string ;
-    got:defenderCommander got:character0,
-        got:character14,
-        got:character1982,
-        got:character26 ;
-    got:defenderHouse got:house336 ;
-    got:defenderKing got:character1928,
-        got:character985 ;
-    got:defenderSize 20000 ;
-    got:location "Green Fork"^^xsd:string ;
-    got:name "Battle of the Green Fork"^^xsd:string ;
-    got:occurredIn got:region20 ;
-    got:year 298 .
-
-got:battle16 a got:Battle ;
-    got:attackerCommander got:character766 ;
-    got:attackerHouse got:house336 ;
-    got:attackerKing got:character1928,
-        got:character985 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:battleType "pitched battle"^^xsd:string ;
-    got:defenderCommander got:character1716,
-        got:character54 ;
-    got:defenderHouse got:house542 ;
-    got:defenderKing got:character1656 ;
-    got:defenderSize 6000 ;
-    got:location "Ruby Ford"^^xsd:string ;
-    got:name "Battle of the Ruby Ford"^^xsd:string ;
-    got:occurredIn got:region20 ;
-    got:year 299 .
-
-got:battle17 a got:Battle ;
-    got:attackerCommander got:character52,
-        got:character653 ;
-    got:attackerHouse got:house257 ;
-    got:attackerKing got:character233,
-        got:character653 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:battleType "pitched battle"^^xsd:string ;
-    got:defenderHouse got:house606 ;
-    got:defenderKing got:character1928,
-        got:character985 ;
-    got:location "Shield Islands"^^xsd:string ;
-    got:name "Battle of the Shield Islands"^^xsd:string ;
-    got:occurredIn got:region17 ;
-    got:year 300 .
-
-got:battle18 a got:Battle ;
-    got:attackerCommander got:character1900 ;
-    got:attackerHouse got:house257 ;
-    got:attackerKing got:character233,
-        got:character653 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:attackerSize 264 ;
-    got:battleType "ambush"^^xsd:string ;
-    got:defenderHouse got:house542 ;
-    got:defenderKing got:character1656 ;
-    got:location "Stony Shore"^^xsd:string ;
-    got:name "Battle of the Stony Shore"^^xsd:string ;
-    got:occurredIn got:region10 ;
-    got:year 299 .
-
-got:battle19 a got:Battle ;
-    got:attackerCommander got:character1656,
-        got:character5 ;
-    got:attackerHouse got:house542,
-        got:house603 ;
-    got:attackerKing got:character1656 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:attackerSize 1875 ;
-    got:battleType "ambush"^^xsd:string ;
-    got:defenderCommander got:character934 ;
-    got:defenderHouse got:house336 ;
-    got:defenderKing got:character1928,
-        got:character985 ;
-    got:defenderSize 6000 ;
-    got:location "Whispering Wood"^^xsd:string ;
-    got:name "Battle of the Whispering Wood"^^xsd:string ;
-    got:occurredIn got:region20 ;
-    got:year 298 .
-
-got:battle2 a got:Battle ;
-    got:attackerCommander got:character211 ;
-    got:attackerHouse got:house257 ;
-    got:attackerKing got:character233,
-        got:character653 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:attackerSize 1000 ;
-    got:battleType "siege"^^xsd:string ;
-    got:defenderHouse got:house542 ;
-    got:defenderKing got:character1656 ;
-    got:location "Deepwood Motte"^^xsd:string ;
-    got:name "Battle of Deepwood Motte"^^xsd:string ;
-    got:occurredIn got:region10 ;
-    got:year 299 .
-
-got:battle20 a got:Battle ;
-    got:attackerCommander got:character1589 ;
-    got:attackerHouse got:house53 ;
-    got:attackerKing got:character1928,
-        got:character985 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:battleType "siege"^^xsd:string ;
-    got:defenderHouse got:house257 ;
-    got:defenderKing got:character233,
-        got:character653 ;
-    got:location "Moat Cailin"^^xsd:string ;
-    got:name "Fall of Moat Cailin"^^xsd:string ;
-    got:occurredIn got:region10 ;
-    got:year 300 .
-
-got:battle21 a got:Battle ;
-    got:attackerCommander got:character52,
-        got:character653 ;
-    got:attackerHouse got:house257 ;
-    got:attackerKing got:character233,
-        got:character653 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:battleType "razing"^^xsd:string ;
-    got:defenderHouse got:house606 ;
-    got:defenderKing got:character1928,
-        got:character985 ;
-    got:location "Ryamsport, Vinetown, Starfish Harbor"^^xsd:string ;
-    got:name "Invasion of Ryamsport, Vinetown, and Starfish Harbor"^^xsd:string ;
-    got:occurredIn got:region17 ;
-    got:year 300 .
-
-got:battle22 a got:Battle ;
-    got:attackerCommander got:character1,
-        got:character1834 ;
-    got:attackerHouse got:house228,
-        got:house23,
-        got:house317,
-        got:house404 ;
-    got:attackerKing got:character1834 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:attackerSize 4500 ;
-    got:battleType "pitched battle"^^xsd:string ;
-    got:defenderCommander got:character211 ;
-    got:defenderHouse got:house257 ;
-    got:defenderKing got:character233,
-        got:character653 ;
-    got:defenderSize 200 ;
-    got:location "Deepwood Motte"^^xsd:string ;
-    got:name "Retaking of Deepwood Motte"^^xsd:string ;
-    got:occurredIn got:region10 ;
-    got:year 300 .
-
-got:battle23 a got:Battle ;
-    got:attackerCommander got:character766 ;
-    got:attackerHouse got:house336 ;
-    got:attackerKing got:character1928,
-        got:character985 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:battleType "pitched battle"^^xsd:string ;
-    got:defenderCommander got:character2014 ;
-    got:defenderHouse got:house63 ;
-    got:location "Harrenhal"^^xsd:string ;
-    got:name "Retaking of Harrenhal"^^xsd:string ;
-    got:occurredIn got:region20 ;
-    got:year 299 .
-
-got:battle24 a got:Battle ;
-    got:attackerCommander got:character766 ;
-    got:attackerHouse got:house336 ;
-    got:attackerKing got:character1928,
-        got:character985 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:battleType "pitched battle"^^xsd:string ;
-    got:defenderCommander got:character1196 ;
-    got:defenderHouse got:house153 ;
-    got:defenderKing got:character1656 ;
-    got:location "Darry"^^xsd:string ;
-    got:name "Sack of Darry"^^xsd:string ;
-    got:occurredIn got:region20 ;
-    got:year 298 .
-
-got:battle25 a got:Battle ;
-    got:attackerCommander got:character1716,
-        got:character37,
-        got:character51 ;
-    got:attackerHouse got:house542 ;
-    got:attackerKing got:character1656 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:attackerSize 100 ;
-    got:battleType "ambush"^^xsd:string ;
-    got:defenderCommander got:character165 ;
-    got:defenderHouse got:house336 ;
-    got:defenderKing got:character1928,
-        got:character985 ;
-    got:defenderSize 100 ;
-    got:location "Harrenhal"^^xsd:string ;
-    got:name "Sack of Harrenhal"^^xsd:string ;
-    got:occurredIn got:region20 ;
-    got:year 299 .
-
-got:battle26 a got:Battle ;
-    got:attackerCommander got:character1718 ;
-    got:attackerHouse got:house63 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:battleType "razing"^^xsd:string ;
-    got:location "Saltpans"^^xsd:string ;
-    got:name "Sack of Saltpans"^^xsd:string ;
-    got:occurredIn got:region20 ;
-    got:year 300 .
-
-got:battle27 a got:Battle ;
-    got:attackerCommander got:character482 ;
-    got:attackerHouse got:house257 ;
-    got:attackerKing got:character233,
-        got:character653 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:battleType "siege"^^xsd:string ;
-    got:defenderHouse got:house542 ;
-    got:defenderKing got:character233,
-        got:character653 ;
-    got:location "Torrhen's Square"^^xsd:string ;
-    got:name "Sack of Torrhen's Square"^^xsd:string ;
-    got:occurredIn got:region10 ;
-    got:year 299 .
-
-got:battle28 a got:Battle ;
-    got:attackerCommander got:character1588,
-        got:character45 ;
-    got:attackerHouse got:house257,
-        got:house53 ;
-    got:attackerKing got:character1928,
-        got:character985 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:attackerSize 618 ;
-    got:battleType "ambush"^^xsd:string ;
-    got:defenderCommander got:character1680,
-        got:character28,
-        got:character6 ;
-    got:defenderHouse got:house542 ;
-    got:defenderKing got:character1656 ;
-    got:defenderSize 2000 ;
-    got:location "Winterfell"^^xsd:string ;
-    got:name "Sack of Winterfell"^^xsd:string ;
-    got:occurredIn got:region10 ;
-    got:year 299 .
-
-got:battle29 a got:Battle ;
-    got:attackerCommander got:character1219,
-        got:character33 ;
-    got:attackerHouse got:house23 ;
-    got:attackerKing got:character1928,
-        got:character985 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:battleType "siege"^^xsd:string ;
-    got:defenderCommander got:character735 ;
-    got:defenderHouse got:house23 ;
-    got:defenderKing got:character1834 ;
-    got:defenderSize 200 ;
-    got:location "Storm's End"^^xsd:string ;
-    got:name "Second Seige of Storm's End"^^xsd:string ;
-    got:occurredIn got:region23 ;
-    got:year 300 .
-
-got:battle3 a got:Battle ;
-    got:attackerCommander got:character1667,
-        got:character19 ;
-    got:attackerHouse got:house542 ;
-    got:attackerKing got:character1656 ;
-    got:attackerOutcome "loss"^^xsd:string ;
-    got:attackerSize 3000 ;
-    got:battleType "pitched battle"^^xsd:string ;
-    got:defenderCommander got:character14,
-        got:character1591 ;
-    got:defenderHouse got:house336 ;
-    got:defenderKing got:character1928,
-        got:character985 ;
-    got:location "Duskendale"^^xsd:string ;
-    got:name "Battle of Duskendale"^^xsd:string ;
-    got:occurredIn got:region1 ;
-    got:year 299 .
-
-got:battle30 a got:Battle ;
-    got:attackerCommander got:character865 ;
-    got:attackerHouse got:house153 ;
-    got:attackerKing got:character1656 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:battleType "siege"^^xsd:string ;
-    got:defenderHouse got:house336 ;
-    got:defenderKing got:character1928,
-        got:character985 ;
-    got:location "Darry"^^xsd:string ;
-    got:name "Siege of Darry"^^xsd:string ;
-    got:occurredIn got:region20 ;
-    got:year 299 .
-
-got:battle31 a got:Battle ;
-    got:attackerCommander got:character1143,
-        got:character36 ;
-    got:attackerHouse got:house23 ;
-    got:attackerKing got:character1928,
-        got:character985 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:attackerSize 2000 ;
-    got:battleType "siege"^^xsd:string ;
-    got:defenderCommander got:character1702 ;
-    got:defenderHouse got:house23 ;
-    got:defenderKing got:character1834 ;
-    got:location "Dragonstone"^^xsd:string ;
-    got:name "Siege of Dragonstone"^^xsd:string ;
-    got:occurredIn got:region23 ;
-    got:year 300 .
-
-got:battle32 a got:Battle ;
-    got:attackerCommander got:character1016,
-        got:character22 ;
-    got:attackerHouse got:house336,
-        got:house60 ;
-    got:attackerKing got:character1928,
-        got:character985 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:attackerSize 1500 ;
-    got:battleType "siege"^^xsd:string ;
-    got:defenderCommander got:character1976 ;
-    got:defenderHouse got:house45 ;
-    got:defenderKing got:character1656 ;
-    got:location "Raventree"^^xsd:string ;
-    got:name "Siege of Raventree"^^xsd:string ;
-    got:occurredIn got:region20 ;
-    got:year 300 .
-
-got:battle33 a got:Battle ;
-    got:attackerCommander got:character22,
-        got:character41,
-        got:character510 ;
-    got:attackerHouse got:house216,
-        got:house336 ;
-    got:attackerKing got:character1928,
-        got:character985 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:attackerSize 3000 ;
-    got:battleType "siege"^^xsd:string ;
-    got:defenderCommander got:character351 ;
-    got:defenderHouse got:house603 ;
-    got:defenderKing got:character1656 ;
-    got:location "Riverrun"^^xsd:string ;
-    got:name "Siege of Riverrun"^^xsd:string ;
-    got:occurredIn got:region20 ;
-    got:year 300 .
-
-got:battle34 a got:Battle ;
-    got:attackerCommander got:character2041 ;
-    got:attackerHouse got:house216 ;
-    got:attackerKing got:character1656 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:battleType "siege"^^xsd:string ;
-    got:defenderCommander got:character946 ;
-    got:defenderHouse got:house371 ;
-    got:defenderKing got:character1928,
-        got:character985 ;
-    got:location "Seagard"^^xsd:string ;
-    got:name "Siege of Seagard"^^xsd:string ;
-    got:occurredIn got:region20 ;
-    got:year 299 .
-
-got:battle35 a got:Battle ;
-    got:attackerCommander got:character1834,
-        got:character9 ;
-    got:attackerHouse got:house23 ;
-    got:attackerKing got:character1834 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:attackerSize 5000 ;
-    got:battleType "siege"^^xsd:string ;
-    got:defenderCommander got:character1616,
-        got:character29,
-        got:character33,
-        got:character35,
-        got:character7 ;
-    got:defenderHouse got:house23 ;
-    got:defenderKing got:character1616 ;
-    got:defenderSize 20000 ;
-    got:location "Storm's End"^^xsd:string ;
-    got:name "Siege of Storm's End"^^xsd:string ;
-    got:occurredIn got:region23 ;
-    got:year 299 .
-
-got:battle36 a got:Battle ;
-    got:attackerCommander got:character1834 ;
-    got:attackerHouse got:house228,
-        got:house23,
-        got:house317,
-        got:house404 ;
-    got:attackerKing got:character1834 ;
-    got:attackerSize 5000 ;
-    got:defenderCommander got:character1716 ;
-    got:defenderHouse got:house216,
-        got:house53 ;
-    got:defenderKing got:character1928,
-        got:character985 ;
-    got:defenderSize 8000 ;
-    got:location "Winterfell"^^xsd:string ;
-    got:name "Siege of Winterfell"^^xsd:string ;
-    got:occurredIn got:region10 ;
-    got:year 300 .
-
-got:battle37 a got:Battle ;
-    got:attackerCommander got:character2041,
-        got:character40,
-        got:character53 ;
-    got:attackerHouse got:house216,
-        got:house53 ;
-    got:attackerKing got:character1928,
-        got:character985 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:attackerSize 3500 ;
-    got:battleType "ambush"^^xsd:string ;
-    got:defenderCommander got:character1656 ;
-    got:defenderHouse got:house542 ;
-    got:defenderKing got:character1656 ;
-    got:defenderSize 3500 ;
-    got:location "The Twins"^^xsd:string ;
-    got:name "The Red Wedding"^^xsd:string ;
-    got:occurredIn got:region20 ;
-    got:year 299 .
-
-got:battle4 a got:Battle ;
-    got:attackerCommander got:character2022 ;
-    got:attackerHouse got:house257 ;
-    got:attackerKing got:character233,
-        got:character653 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:battleType "pitched battle"^^xsd:string ;
-    got:defenderHouse got:house542 ;
-    got:defenderKing got:character1656 ;
-    got:location "Moat Cailin"^^xsd:string ;
-    got:name "Battle of Moat Cailin"^^xsd:string ;
-    got:occurredIn got:region10 ;
-    got:year 299 .
-
-got:battle5 a got:Battle ;
-    got:attackerCommander got:character1656,
-        got:character5 ;
-    got:attackerHouse got:house542,
-        got:house603 ;
-    got:attackerKing got:character1656 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:attackerSize 6000 ;
-    got:battleType "ambush"^^xsd:string ;
-    got:defenderCommander got:character1832,
-        got:character3,
-        got:character38 ;
-    got:defenderHouse got:house336 ;
-    got:defenderKing got:character1928,
-        got:character985 ;
-    got:defenderSize 10000 ;
-    got:location "Oxcross"^^xsd:string ;
-    got:name "Battle of Oxcross"^^xsd:string ;
-    got:occurredIn got:region28 ;
-    got:year 299 .
-
-got:battle6 a got:Battle ;
-    got:attackerCommander got:character2,
-        got:character934 ;
-    got:attackerHouse got:house336 ;
-    got:attackerKing got:character1928,
-        got:character985 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:attackerSize 15000 ;
-    got:battleType "pitched battle"^^xsd:string ;
-    got:defenderCommander got:character47,
-        got:character593 ;
-    got:defenderHouse got:house603 ;
-    got:defenderKing got:character1656 ;
-    got:defenderSize 10000 ;
-    got:location "Riverrun"^^xsd:string ;
-    got:name "Battle of Riverrun"^^xsd:string ;
-    got:occurredIn got:region20 ;
-    got:year 298 .
-
-got:battle7 a got:Battle ;
-    got:attackerCommander got:character1680,
-        got:character6 ;
-    got:attackerHouse got:house542 ;
-    got:attackerKing got:character1656 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:attackerSize 244 ;
-    got:battleType "pitched battle"^^xsd:string ;
-    got:defenderCommander got:character482 ;
-    got:defenderHouse got:house257 ;
-    got:defenderKing got:character233,
-        got:character653 ;
-    got:defenderSize 900 ;
-    got:location "Torrhen's Square"^^xsd:string ;
-    got:name "Battle of Torrhen's Square"^^xsd:string ;
-    got:occurredIn got:region10 ;
-    got:year 299 .
-
-got:battle8 a got:Battle ;
-    got:attackerCommander got:character1900 ;
-    got:attackerHouse got:house257 ;
-    got:attackerKing got:character233,
-        got:character653 ;
-    got:attackerOutcome "win"^^xsd:string ;
-    got:attackerSize 20 ;
-    got:battleType "ambush"^^xsd:string ;
-    got:defenderCommander got:character323 ;
-    got:defenderHouse got:house542 ;
-    got:defenderKing got:character1656 ;
-    got:location "Winterfell"^^xsd:string ;
-    got:name "Battle of Winterfell"^^xsd:string ;
-    got:occurredIn got:region10 ;
-    got:year 299 .
-
-got:battle9 a got:Battle ;
-    got:attackerCommander got:character15,
-        got:character1834,
-        got:character20,
-        got:character39,
-        got:character42,
-        got:character9 ;
-    got:attackerHouse got:house23 ;
-    got:attackerKing got:character1834 ;
-    got:attackerOutcome "loss"^^xsd:string ;
-    got:attackerSize 21000 ;
-    got:battleType "pitched battle"^^xsd:string ;
-    got:defenderCommander got:character13,
-        got:character1971,
-        got:character21,
-        got:character31,
-        got:character35,
-        got:character43,
-        got:character48 ;
-    got:defenderHouse got:house336 ;
-    got:defenderKing got:character1928,
-        got:character985 ;
-    got:defenderSize 7250 ;
-    got:location "King's Landing"^^xsd:string ;
-    got:name "Battle of the Blackwater"^^xsd:string ;
-    got:occurredIn got:region1 ;
-    got:year 299 .
+got:character10 a got:Character ;
+    got:defenderCommanderOf got:battle1 ;
+    got:name " Donal Noye"^^xsd:string .
 
 got:character100 a got:Character ;
     got:apearedIn got:book1,
@@ -849,6 +184,22 @@ got:character1013 a got:Character ;
     got:name "Jon Waters"^^xsd:string ;
     got:popularity "0.076923077"^^xsd:float ;
     got:title "Ser"^^xsd:string .
+
+got:character1016 a got:Character ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:attackerCommanderOf got:battle32 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house60 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 0 ;
+    got:name "Jonos Bracken"^^xsd:string ;
+    got:popularity "0.190635452"^^xsd:float ;
+    got:title "Stone Hedge"^^xsd:string .
 
 got:character1017 a got:Character ;
     got:age 14 ;
@@ -1644,6 +995,10 @@ got:character1099 a got:Character ;
     got:name "Lark"^^xsd:string ;
     got:popularity "0.040133779"^^xsd:float .
 
+got:character11 a got:Character ;
+    got:attackerCommanderOf got:battle13 ;
+    got:name " Flement Brax"^^xsd:string .
+
 got:character110 a got:Character ;
     got:apearedIn got:book2 ;
     got:culture "Northmen"^^xsd:string ;
@@ -2047,6 +1402,10 @@ got:character1144 a got:Character ;
     got:isPopular 0 ;
     got:name "Lorcas"^^xsd:string ;
     got:popularity "0.010033445"^^xsd:float .
+
+got:character1145 a got:Character ;
+    got:defenderCommanderOf got:battle11 ;
+    got:name "Lord Andros Brax"^^xsd:string .
 
 got:character1146 a got:Character ;
     got:culture "Reach"^^xsd:string ;
@@ -2588,6 +1947,22 @@ got:character1194 a got:Character ;
     got:popularity "0.107023411"^^xsd:float ;
     got:title "Ser"^^xsd:string .
 
+got:character1196 a got:Character ;
+    got:age 9 ;
+    got:apearedIn got:book1,
+        got:book2 ;
+    got:dateOfBirth 290 ;
+    got:dateOfDeath 299 ;
+    got:defenderCommanderOf got:battle24 ;
+    got:gender "female"^^xsd:string ;
+    got:hasHouse got:house153 ;
+    got:isAlive 0 ;
+    got:isNoble 1 ;
+    got:isPopular 0 ;
+    got:name "Lyman Darry"^^xsd:string ;
+    got:popularity "0.056856187"^^xsd:float ;
+    got:title "Lord of Darry"^^xsd:string .
+
 got:character1197 a got:Character ;
     got:apearedIn got:book3,
         got:book4,
@@ -2623,6 +1998,10 @@ got:character1199 a got:Character ;
     got:name "Lymond Mallister"^^xsd:string ;
     got:popularity "0.013377926"^^xsd:float ;
     got:title "Seagard"^^xsd:string .
+
+got:character12 a got:Character ;
+    got:defenderCommanderOf got:battle11 ;
+    got:name " Forley Prester"^^xsd:string .
 
 got:character120 a got:Character ;
     got:gender "female"^^xsd:string ;
@@ -3632,6 +3011,10 @@ got:character1299 a got:Character ;
     got:isPopular 0 ;
     got:name "Megga Tyrell"^^xsd:string ;
     got:popularity "0.153846154"^^xsd:float .
+
+got:character13 a got:Character ;
+    got:defenderCommanderOf got:battle9 ;
+    got:name " Garlan Tyrell"^^xsd:string .
 
 got:character130 a got:Character ;
     got:apearedIn got:book3,
@@ -4712,6 +4095,12 @@ got:character1398 a got:Character ;
     got:name "Myrtle"^^xsd:string ;
     got:popularity "0.046822742"^^xsd:float .
 
+got:character14 a got:Character ;
+    got:attackerCommanderOf got:battle13 ;
+    got:defenderCommanderOf got:battle15,
+        got:battle3 ;
+    got:name " Gregor Clegane"^^xsd:string .
+
 got:character140 a got:Character ;
     got:apearedIn got:book1,
         got:book2,
@@ -5695,6 +5084,10 @@ got:character1497 a got:Character ;
     got:name "Pate (Standfast)"^^xsd:string ;
     got:popularity "0.013377926"^^xsd:float .
 
+got:character15 a got:Character ;
+    got:attackerCommanderOf got:battle9 ;
+    got:name " Guyard Morrigen"^^xsd:string .
+
 got:character150 a got:Character ;
     got:name "Alysanne Farman"^^xsd:string ;
     got:spouseOf got:character728 .
@@ -6651,6 +6044,10 @@ got:character1586 a got:Character ;
     got:popularity "0.033444816"^^xsd:float ;
     got:title "Red Jester"^^xsd:string .
 
+got:character1589 a got:Character ;
+    got:attackerCommanderOf got:battle20 ;
+    got:name "Ramsey Bolton"^^xsd:string .
+
 got:character159 a got:Character ;
     got:age 23 ;
     got:apearedIn got:book2,
@@ -6753,6 +6150,10 @@ got:character1599 a got:Character ;
     got:name "Raymun Fossoway"^^xsd:string ;
     got:popularity "0.040133779"^^xsd:float ;
     got:title "Ser"^^xsd:string .
+
+got:character16 a got:Character ;
+    got:attackerCommanderOf got:battle15 ;
+    got:name " Halys Hornwood"^^xsd:string .
 
 got:character160 a got:Character ;
     got:apearedIn got:book2,
@@ -7155,6 +6556,23 @@ got:character1649 a got:Character ;
     got:name "Rickard Tyrell"^^xsd:string ;
     got:popularity "0.123745819"^^xsd:float .
 
+got:character165 a got:Character ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:dateOfDeath 299 ;
+    got:defenderCommanderOf got:battle25 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house358 ;
+    got:isAlive 0 ;
+    got:isNoble 1 ;
+    got:isPopular 0 ;
+    got:name "Amory Lorch"^^xsd:string ;
+    got:popularity "0.277591973"^^xsd:float ;
+    got:title "Ser"^^xsd:string .
+
 got:character1650 a got:Character ;
     got:age 10 ;
     got:apearedIn got:book2,
@@ -7319,6 +6737,10 @@ got:character1666 a got:Character ;
     got:name "Robert Paege"^^xsd:string ;
     got:popularity "0.010033445"^^xsd:float ;
     got:title "Ser"^^xsd:string .
+
+got:character1667 a got:Character ;
+    got:attackerCommanderOf got:battle3 ;
+    got:name "Robertt Glover"^^xsd:string .
 
 got:character1669 a got:Character ;
     got:apearedIn got:book4 ;
@@ -7634,6 +7056,10 @@ got:character1699 a got:Character ;
     got:name "Rollam Westerling"^^xsd:string ;
     got:popularity "0.043478261"^^xsd:float .
 
+got:character17 a got:Character ;
+    got:attackerCommanderOf got:battle1 ;
+    got:name " Harma Dogshead"^^xsd:string .
+
 got:character170 a got:Character ;
     got:apearedIn got:book4 ;
     got:culture "Dornish"^^xsd:string ;
@@ -7669,6 +7095,20 @@ got:character1701 a got:Character ;
     got:popularity "0.016722408"^^xsd:float ;
     got:title "Longsister"^^xsd:string .
 
+got:character1702 a got:Character ;
+    got:apearedIn got:book3,
+        got:book4,
+        got:book5 ;
+    got:defenderCommanderOf got:battle31 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house93 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 0 ;
+    got:name "Rolland Storm"^^xsd:string ;
+    got:popularity "0.070234114"^^xsd:float ;
+    got:title "Ser"^^xsd:string .
+
 got:character1704 a got:Character ;
     got:apearedIn got:book5 ;
     got:gender "male"^^xsd:string ;
@@ -7678,6 +7118,19 @@ got:character1704 a got:Character ;
     got:isPopular 0 ;
     got:name "Rolly Duckfield"^^xsd:string ;
     got:popularity "0.086956522"^^xsd:float ;
+    got:title "Ser"^^xsd:string .
+
+got:character1705 a got:Character ;
+    got:apearedIn got:book3,
+        got:book4 ;
+    got:defenderCommanderOf got:battle12 ;
+    got:gender "female"^^xsd:string ;
+    got:hasHouse got:house535 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 0 ;
+    got:name "Rolph Spicer"^^xsd:string ;
+    got:popularity "0.060200669"^^xsd:float ;
     got:title "Ser"^^xsd:string .
 
 got:character1706 a got:Character ;
@@ -7823,6 +7276,20 @@ got:character1717 a got:Character ;
     got:isPopular 0 ;
     got:name "Roose Ryswell"^^xsd:string ;
     got:popularity "0.030100334"^^xsd:float .
+
+got:character1718 a got:Character ;
+    got:apearedIn got:book2,
+        got:book3,
+        got:book4 ;
+    got:attackerCommanderOf got:battle26 ;
+    got:dateOfDeath 300 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house63 ;
+    got:isAlive 0 ;
+    got:isNoble 0 ;
+    got:isPopular 0 ;
+    got:name "Rorge"^^xsd:string ;
+    got:popularity "0.16722408"^^xsd:float .
 
 got:character1719 a got:Character ;
     got:apearedIn got:book3,
@@ -8511,6 +7978,10 @@ got:character1799 a got:Character ;
     got:name "Sherrit"^^xsd:string ;
     got:popularity "0.003344482"^^xsd:float ;
     got:title "King"^^xsd:string .
+
+got:character18 a got:Character ;
+    got:attackerCommanderOf got:battle15 ;
+    got:name " Harrion Karstark"^^xsd:string .
 
 got:character180 a got:Character ;
     got:apearedIn got:book5 ;
@@ -9496,6 +8967,10 @@ got:character1899 a got:Character ;
     got:popularity "0.053511706"^^xsd:float ;
     got:title "Lord of the Ten TowersLord Harlaw of HarlawHarlaw of Harlaw"^^xsd:string .
 
+got:character19 a got:Character ;
+    got:attackerCommanderOf got:battle3 ;
+    got:name " Helman Tallhart"^^xsd:string .
+
 got:character190 a got:Character ;
     got:gender "male"^^xsd:string ;
     got:hasHouse got:house97 ;
@@ -10274,6 +9749,22 @@ got:character1975 a got:Character ;
     got:name "Tyta Frey"^^xsd:string ;
     got:popularity "0.086956522"^^xsd:float .
 
+got:character1976 a got:Character ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:defenderCommanderOf got:battle32 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house45 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 0 ;
+    got:name "Tytos Blackwood"^^xsd:string ;
+    got:popularity "0.220735786"^^xsd:float ;
+    got:title "Raventree Hall"^^xsd:string .
+
 got:character1977 a got:Character ;
     got:apearedIn got:book1,
         got:book2,
@@ -10528,6 +10019,14 @@ got:character1999 a got:Character ;
     got:name "Urswyck"^^xsd:string ;
     got:popularity "0.030100334"^^xsd:float .
 
+got:character2 a got:Character ;
+    got:attackerCommanderOf got:battle6 ;
+    got:name " Andros Brax"^^xsd:string .
+
+got:character20 a got:Character ;
+    got:attackerCommanderOf got:battle9 ;
+    got:name " Imry Florent"^^xsd:string .
+
 got:character200 a got:Character ;
     got:apearedIn got:book3 ;
     got:culture "Free Folk"^^xsd:string ;
@@ -10664,6 +10163,23 @@ got:character2013 a got:Character ;
     got:name "Vardis Egen"^^xsd:string ;
     got:popularity "0.090301003"^^xsd:float ;
     got:title "Ser"^^xsd:string .
+
+got:character2014 a got:Character ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4 ;
+    got:culture "Qohor"^^xsd:string ;
+    got:dateOfDeath 300 ;
+    got:defenderCommanderOf got:battle23 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house63 ;
+    got:isAlive 0 ;
+    got:isNoble 1 ;
+    got:isPopular 0 ;
+    got:name "Vargo Hoat"^^xsd:string ;
+    got:popularity "0.210702341"^^xsd:float ;
+    got:title "Lord of Harrenhal"^^xsd:string .
 
 got:character2015 a got:Character ;
     got:apearedIn got:book1 ;
@@ -11538,6 +11054,10 @@ got:character2099 a got:Character ;
     got:name "Willem Frey"^^xsd:string ;
     got:popularity "0.080267559"^^xsd:float .
 
+got:character21 a got:Character ;
+    got:defenderCommanderOf got:battle9 ;
+    got:name " Jacelyn Bywater"^^xsd:string .
+
 got:character210 a got:Character ;
     got:apearedIn got:book1,
         got:book2,
@@ -12110,6 +11630,11 @@ got:character219 a got:Character ;
     got:popularity "0.0"^^xsd:float ;
     got:title "King-Beyond-the-Wall"^^xsd:string .
 
+got:character22 a got:Character ;
+    got:attackerCommanderOf got:battle32,
+        got:battle33 ;
+    got:name " Jaime Lannister"^^xsd:string .
+
 got:character222 a got:Character ;
     got:fatherOf got:character2026 ;
     got:name "Baelon Targaryen"^^xsd:string .
@@ -12157,6 +11682,10 @@ got:character226 a got:Character ;
     got:name "Baelor Blacktyde"^^xsd:string ;
     got:popularity "0.060200669"^^xsd:float ;
     got:title "Blacktyde"^^xsd:string .
+
+got:character23 a got:Character ;
+    got:defenderCommanderOf got:battle13 ;
+    got:name " Jason Mallister"^^xsd:string .
 
 got:character230 a got:Character ;
     got:apearedIn got:book2,
@@ -12244,6 +11773,10 @@ got:character238 a got:Character ;
     got:isPopular 0 ;
     got:name "Barbara Bracken"^^xsd:string ;
     got:popularity "0.030100334"^^xsd:float .
+
+got:character24 a got:Character ;
+    got:defenderCommanderOf got:battle1 ;
+    got:name " Jon Snow"^^xsd:string .
 
 got:character240 a got:Character ;
     got:name "Barbrey Ryswell"^^xsd:string ;
@@ -12343,6 +11876,10 @@ got:character249 a got:Character ;
     got:name "Bearded Ben"^^xsd:string ;
     got:popularity "0.023411371"^^xsd:float .
 
+got:character25 a got:Character ;
+    got:defenderCommanderOf got:battle13 ;
+    got:name " Karyl Vance"^^xsd:string .
+
 got:character250 a got:Character ;
     got:apearedIn got:book3,
         got:book4 ;
@@ -12440,6 +11977,10 @@ got:character258 a got:Character ;
     got:isPopular 0 ;
     got:name "Bellegere Otherys"^^xsd:string ;
     got:popularity "0.040133779"^^xsd:float .
+
+got:character26 a got:Character ;
+    got:defenderCommanderOf got:battle15 ;
+    got:name " Kevan Lannister"^^xsd:string .
 
 got:character260 a got:Character ;
     got:apearedIn got:book4 ;
@@ -12558,6 +12099,10 @@ got:character269 a got:Character ;
     got:popularity "0.02006689"^^xsd:float ;
     got:title "Ser"^^xsd:string .
 
+got:character27 a got:Character ;
+    got:attackerCommanderOf got:battle13 ;
+    got:name " Leo Lefford"^^xsd:string .
+
 got:character271 a got:Character ;
     got:age 18 ;
     got:apearedIn got:book2,
@@ -12637,6 +12182,10 @@ got:character279 a got:Character ;
     got:popularity "0.036789298"^^xsd:float ;
     got:title "Ser"^^xsd:string .
 
+got:character28 a got:Character ;
+    got:defenderCommanderOf got:battle28 ;
+    got:name " Leobald Tallhart"^^xsd:string .
+
 got:character280 a got:Character ;
     got:name "Beony Beesbury"^^xsd:string ;
     got:spouseOf got:character1601 .
@@ -12708,6 +12257,10 @@ got:character289 a got:Character ;
     got:name "Bessa"^^xsd:string ;
     got:popularity "0.006688963"^^xsd:float .
 
+got:character29 a got:Character ;
+    got:defenderCommanderOf got:battle35 ;
+    got:name " Loras Tyrell"^^xsd:string .
+
 got:character290 a got:Character ;
     got:apearedIn got:book1 ;
     got:culture "Northmen"^^xsd:string ;
@@ -12769,6 +12322,14 @@ got:character296 a got:Character ;
 got:character299 a got:Character ;
     got:name "Bethany Ryswell"^^xsd:string ;
     got:spouseOf got:character1716 .
+
+got:character3 a got:Character ;
+    got:defenderCommanderOf got:battle5 ;
+    got:name " Antario Jast"^^xsd:string .
+
+got:character30 a got:Character ;
+    got:attackerCommanderOf got:battle13 ;
+    got:name " Lyle Crakehall"^^xsd:string .
 
 got:character301 a got:Character ;
     got:apearedIn got:book5 ;
@@ -12868,6 +12429,10 @@ got:character309 a got:Character ;
     got:isPopular 0 ;
     got:name "Bloodbeard"^^xsd:string ;
     got:popularity "0.090301003"^^xsd:float .
+
+got:character31 a got:Character ;
+    got:defenderCommanderOf got:battle9 ;
+    got:name " Mace Tyrell"^^xsd:string .
 
 got:character310 a got:Character ;
     got:apearedIn got:book4,
@@ -12976,6 +12541,10 @@ got:character318 a got:Character ;
     got:name "Bors"^^xsd:string ;
     got:popularity "0.006688963"^^xsd:float .
 
+got:character32 a got:Character ;
+    got:attackerCommanderOf got:battle1 ;
+    got:name " Magnar Styr"^^xsd:string .
+
 got:character320 a got:Character ;
     got:apearedIn got:book1,
         got:book2,
@@ -13052,6 +12621,11 @@ got:character329 a got:Character ;
     got:isPopular 0 ;
     got:name "Brandon Stark (Shipwright)"^^xsd:string ;
     got:popularity "0.036789298"^^xsd:float .
+
+got:character33 a got:Character ;
+    got:attackerCommanderOf got:battle29 ;
+    got:defenderCommanderOf got:battle35 ;
+    got:name " Mathis Rowan"^^xsd:string .
 
 got:character331 a got:Character ;
     got:apearedIn got:book2 ;
@@ -13143,6 +12717,10 @@ got:character338 a got:Character ;
     got:isPopular 0 ;
     got:name "Brogg"^^xsd:string ;
     got:popularity "0.006688963"^^xsd:float .
+
+got:character34 a got:Character ;
+    got:attackerCommanderOf got:battle15 ;
+    got:name " Medger Cerwyn"^^xsd:string .
 
 got:character341 a got:Character ;
     got:apearedIn got:book2,
@@ -13253,6 +12831,11 @@ got:character349 a got:Character ;
     got:name "Bryen Farring"^^xsd:string ;
     got:popularity "0.033444816"^^xsd:float .
 
+got:character35 a got:Character ;
+    got:defenderCommanderOf got:battle35,
+        got:battle9 ;
+    got:name " Randyll Tarly"^^xsd:string .
+
 got:character352 a got:Character ;
     got:gender "male"^^xsd:string ;
     got:hasHouse got:house81 ;
@@ -13341,6 +12924,10 @@ got:character359 a got:Character ;
     got:popularity "0.006688963"^^xsd:float ;
     got:title "Ser"^^xsd:string .
 
+got:character36 a got:Character ;
+    got:attackerCommanderOf got:battle31 ;
+    got:name " Raxter Redwyne"^^xsd:string .
+
 got:character360 a got:Character ;
     got:apearedIn got:book4,
         got:book5 ;
@@ -13352,6 +12939,10 @@ got:character360 a got:Character ;
     got:name "Byron"^^xsd:string ;
     got:popularity "0.02006689"^^xsd:float ;
     got:title "Ser"^^xsd:string .
+
+got:character37 a got:Character ;
+    got:attackerCommanderOf got:battle25 ;
+    got:name " Robett Glover"^^xsd:string .
 
 got:character370 a got:Character ;
     got:apearedIn got:book2,
@@ -13447,6 +13038,10 @@ got:character379 a got:Character ;
     got:name "Cass"^^xsd:string ;
     got:popularity "0.016722408"^^xsd:float .
 
+got:character38 a got:Character ;
+    got:defenderCommanderOf got:battle5 ;
+    got:name " Roland Crakehall"^^xsd:string .
+
 got:character381 a got:Character ;
     got:culture "Dornishmen"^^xsd:string ;
     got:gender "female"^^xsd:string ;
@@ -13526,6 +13121,10 @@ got:character389 a got:Character ;
     got:isPopular 0 ;
     got:name "Cedrik Storm"^^xsd:string ;
     got:popularity "0.003344482"^^xsd:float .
+
+got:character39 a got:Character ;
+    got:attackerCommanderOf got:battle9 ;
+    got:name " Rolland Storm"^^xsd:string .
 
 got:character390 a got:Character ;
     got:apearedIn got:book1,
@@ -13624,6 +13223,14 @@ got:character399 a got:Character ;
     got:name "Chayle"^^xsd:string ;
     got:popularity "0.063545151"^^xsd:float ;
     got:title "Septon"^^xsd:string .
+
+got:character4 a got:Character ;
+    got:attackerCommanderOf got:battle12 ;
+    got:name " Black Walder Frey"^^xsd:string .
+
+got:character40 a got:Character ;
+    got:attackerCommanderOf got:battle37 ;
+    got:name " Roose Bolton"^^xsd:string .
 
 got:character400 a got:Character ;
     got:apearedIn got:book1,
@@ -13740,6 +13347,10 @@ got:character409 a got:Character ;
     got:popularity "0.043478261"^^xsd:float ;
     got:title "Ser"^^xsd:string .
 
+got:character41 a got:Character ;
+    got:attackerCommanderOf got:battle33 ;
+    got:name " Ryman Fey"^^xsd:string .
+
 got:character411 a got:Character ;
     got:age 54 ;
     got:apearedIn got:book4 ;
@@ -13762,6 +13373,22 @@ got:character412 a got:Character ;
     got:name "Clement Crabb"^^xsd:string ;
     got:popularity "0.013377926"^^xsd:float ;
     got:title "Ser"^^xsd:string .
+
+got:character413 a got:Character ;
+    got:apearedIn got:book1,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:culture "Rivermen"^^xsd:string ;
+    got:defenderCommanderOf got:battle14 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house450 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 0 ;
+    got:name "Clement Piper"^^xsd:string ;
+    got:popularity "0.070234114"^^xsd:float ;
+    got:title "Pinkmaiden"^^xsd:string .
 
 got:character414 a got:Character ;
     got:apearedIn got:book3,
@@ -13827,6 +13454,10 @@ got:character419 a got:Character ;
     got:name "Clifford Conklyn"^^xsd:string ;
     got:popularity "0.006688963"^^xsd:float ;
     got:title "Ser"^^xsd:string .
+
+got:character42 a got:Character ;
+    got:attackerCommanderOf got:battle9 ;
+    got:name " Salladhor Saan"^^xsd:string .
 
 got:character420 a got:Character ;
     got:apearedIn got:book3,
@@ -13958,6 +13589,10 @@ got:character429 a got:Character ;
     got:name "Conn"^^xsd:string ;
     got:popularity "0.013377926"^^xsd:float .
 
+got:character43 a got:Character ;
+    got:defenderCommanderOf got:battle9 ;
+    got:name " Sandor Clegane"^^xsd:string .
+
 got:character430 a got:Character ;
     got:apearedIn got:book2,
         got:book3,
@@ -14034,6 +13669,10 @@ got:character439 a got:Character ;
     got:isPopular 0 ;
     got:name "Cossomo"^^xsd:string ;
     got:popularity "0.013377926"^^xsd:float .
+
+got:character44 a got:Character ;
+    got:attackerCommanderOf got:battle12 ;
+    got:name " Smalljon Umber"^^xsd:string .
 
 got:character440 a got:Character ;
     got:apearedIn got:book1,
@@ -14131,6 +13770,10 @@ got:character448 a got:Character ;
     got:name "Cregan Karstark"^^xsd:string ;
     got:popularity "0.066889632"^^xsd:float .
 
+got:character45 a got:Character ;
+    got:attackerCommanderOf got:battle28 ;
+    got:name " Theon Greyjoy "^^xsd:string .
+
 got:character450 a got:Character ;
     got:age 65 ;
     got:apearedIn got:book4 ;
@@ -14226,6 +13869,10 @@ got:character459 a got:Character ;
     got:name "Dacey Mormont"^^xsd:string ;
     got:popularity "0.086956522"^^xsd:float .
 
+got:character46 a got:Character ;
+    got:attackerCommanderOf got:battle1 ;
+    got:name " Tormund Giantsbane"^^xsd:string .
+
 got:character460 a got:Character ;
     got:apearedIn got:book1 ;
     got:gender "male"^^xsd:string ;
@@ -14288,6 +13935,11 @@ got:character467 a got:Character ;
     got:popularity "0.073578595"^^xsd:float ;
     got:title "Ser"^^xsd:string .
 
+got:character47 a got:Character ;
+    got:attackerCommanderOf got:battle11 ;
+    got:defenderCommanderOf got:battle6 ;
+    got:name " Tytos Blackwood"^^xsd:string .
+
 got:character470 a got:Character ;
     got:motherOf got:character228,
         got:character474 ;
@@ -14333,6 +13985,10 @@ got:character479 a got:Character ;
     got:popularity "0.006688963"^^xsd:float ;
     got:title "Princess"^^xsd:string .
 
+got:character48 a got:Character ;
+    got:defenderCommanderOf got:battle9 ;
+    got:name " Tywin Lannister"^^xsd:string .
+
 got:character481 a got:Character ;
     got:apearedIn got:book2,
         got:book4,
@@ -14346,6 +14002,11 @@ got:character481 a got:Character ;
     got:name "Dagmer"^^xsd:string ;
     got:popularity "0.120401338"^^xsd:float ;
     got:title "Foamdrinker"^^xsd:string .
+
+got:character482 a got:Character ;
+    got:attackerCommanderOf got:battle27 ;
+    got:defenderCommanderOf got:battle7 ;
+    got:name "Dagmer Cleftjaw"^^xsd:string .
 
 got:character483 a got:Character ;
     got:apearedIn got:book4,
@@ -14434,6 +14095,10 @@ got:character489 a got:Character ;
     got:popularity "0.070234114"^^xsd:float ;
     got:title "Wraith"^^xsd:string .
 
+got:character49 a got:Character ;
+    got:defenderCommanderOf got:battle14 ;
+    got:name " Vance"^^xsd:string .
+
 got:character490 a got:Character ;
     got:apearedIn got:book3,
         got:book4,
@@ -14516,6 +14181,16 @@ got:character499 a got:Character ;
     got:isPopular 0 ;
     got:name "Dan"^^xsd:string ;
     got:popularity "0.003344482"^^xsd:float .
+
+got:character5 a got:Character ;
+    got:attackerCommanderOf got:battle11,
+        got:battle19,
+        got:battle5 ;
+    got:name " Brynden Tully"^^xsd:string .
+
+got:character50 a got:Character ;
+    got:attackerCommanderOf got:battle1 ;
+    got:name " Varamyr"^^xsd:string .
 
 got:character500 a got:Character ;
     got:apearedIn got:book2,
@@ -14611,6 +14286,29 @@ got:character509 a got:Character ;
     got:name "Daughter of the Dusk"^^xsd:string ;
     got:popularity "0.013377926"^^xsd:float .
 
+got:character51 a got:Character ;
+    got:attackerCommanderOf got:battle25 ;
+    got:name " Vargo Hoat"^^xsd:string .
+
+got:character510 a got:Character ;
+    got:age 32 ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:attackerCommanderOf got:battle33 ;
+    got:culture "Westerman"^^xsd:string ;
+    got:dateOfBirth 273 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house336 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 0 ;
+    got:name "Daven Lannister"^^xsd:string ;
+    got:popularity "0.20735786"^^xsd:float ;
+    got:title "Ser"^^xsd:string .
+
 got:character513 a got:Character ;
     got:age 16 ;
     got:apearedIn got:book3,
@@ -14688,6 +14386,11 @@ got:character519 a got:Character ;
     got:name "Dennis Plumm"^^xsd:string ;
     got:popularity "0.026755853"^^xsd:float ;
     got:title "Ser"^^xsd:string .
+
+got:character52 a got:Character ;
+    got:attackerCommanderOf got:battle17,
+        got:battle21 ;
+    got:name " Victarion Greyjoy"^^xsd:string .
 
 got:character520 a got:Character ;
     got:age 18 ;
@@ -14794,6 +14497,10 @@ got:character529 a got:Character ;
     got:popularity "0.076923077"^^xsd:float ;
     got:title "Ser"^^xsd:string .
 
+got:character53 a got:Character ;
+    got:attackerCommanderOf got:battle37 ;
+    got:name " Walder Rivers"^^xsd:string .
+
 got:character531 a got:Character ;
     got:age 18 ;
     got:apearedIn got:book2,
@@ -14892,6 +14599,11 @@ got:character539 a got:Character ;
     got:isPopular 0 ;
     got:name "Dirk"^^xsd:string ;
     got:popularity "0.043478261"^^xsd:float .
+
+got:character54 a got:Character ;
+    got:attackerCommanderOf got:battle15 ;
+    got:defenderCommanderOf got:battle16 ;
+    got:name " Wylis Manderly"^^xsd:string .
 
 got:character540 a got:Character ;
     got:apearedIn got:book2 ;
@@ -15460,6 +15172,11 @@ got:character598 a got:Character ;
     got:name "Edwyd Fossoway"^^xsd:string ;
     got:popularity "0.023411371"^^xsd:float ;
     got:title "Ser"^^xsd:string .
+
+got:character6 a got:Character ;
+    got:attackerCommanderOf got:battle7 ;
+    got:defenderCommanderOf got:battle28 ;
+    got:name " Cley Cerwyn"^^xsd:string .
 
 got:character60 a got:Character ;
     got:gender "male"^^xsd:string ;
@@ -16463,6 +16180,10 @@ got:character699 a got:Character ;
     got:name "Garrett Paege"^^xsd:string ;
     got:popularity "0.013377926"^^xsd:float .
 
+got:character7 a got:Character ;
+    got:defenderCommanderOf got:battle35 ;
+    got:name " Cortnay Penrose"^^xsd:string .
+
 got:character700 a got:Character ;
     got:apearedIn got:book4,
         got:book5 ;
@@ -16809,6 +16530,20 @@ got:character734 a got:Character ;
     got:isPopular 0 ;
     got:name "Ghost of High Heart"^^xsd:string ;
     got:popularity "0.086956522"^^xsd:float .
+
+got:character735 a got:Character ;
+    got:apearedIn got:book3,
+        got:book4,
+        got:book5 ;
+    got:defenderCommanderOf got:battle29 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house188 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 0 ;
+    got:name "Gilbert Farring"^^xsd:string ;
+    got:popularity "0.046822742"^^xsd:float ;
+    got:title "Ser"^^xsd:string .
 
 got:character737 a got:Character ;
     got:apearedIn got:book4 ;
@@ -17496,6 +17231,10 @@ got:character799 a got:Character ;
     got:isPopular 0 ;
     got:name "Gyles Farwynd"^^xsd:string ;
     got:popularity "0.010033445"^^xsd:float .
+
+got:character8 a got:Character ;
+    got:defenderCommanderOf got:battle1 ;
+    got:name " Cotter Pyke"^^xsd:string .
 
 got:character800 a got:Character ;
     got:apearedIn got:book4 ;
@@ -18233,6 +17972,24 @@ got:character864 a got:Character ;
     got:name "Helly"^^xsd:string ;
     got:popularity "0.013377926"^^xsd:float .
 
+got:character865 a got:Character ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:attackerCommanderOf got:battle30 ;
+    got:culture "Northmen"^^xsd:string ;
+    got:dateOfDeath 299 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house571 ;
+    got:isAlive 0 ;
+    got:isNoble 1 ;
+    got:isPopular 0 ;
+    got:name "Helman Tallhart"^^xsd:string ;
+    got:popularity "0.130434783"^^xsd:float ;
+    got:title "Ser"^^xsd:string .
+
 got:character866 a got:Character ;
     got:apearedIn got:book2,
         got:book3,
@@ -18551,6 +18308,11 @@ got:character899 a got:Character ;
     got:name "Hugh"^^xsd:string ;
     got:popularity "0.063545151"^^xsd:float ;
     got:title "Ser"^^xsd:string .
+
+got:character9 a got:Character ;
+    got:attackerCommanderOf got:battle35,
+        got:battle9 ;
+    got:name " Davos Seaworth"^^xsd:string .
 
 got:character900 a got:Character ;
     got:apearedIn got:book4 ;
@@ -18955,6 +18717,23 @@ got:character944 a got:Character ;
     got:isPopular 0 ;
     got:name "Jarl"^^xsd:string ;
     got:popularity "0.050167224"^^xsd:float .
+
+got:character946 a got:Character ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:culture "Riverlands"^^xsd:string ;
+    got:defenderCommanderOf got:battle34 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house371 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 0 ;
+    got:name "Jason Mallister"^^xsd:string ;
+    got:popularity "0.127090301"^^xsd:float ;
+    got:title "Seagard"^^xsd:string .
 
 got:character947 a got:Character ;
     got:apearedIn got:book4 ;
@@ -19636,6 +19415,10 @@ got:house209 a got:House ;
     got:name "Forrester"^^xsd:string ;
     got:sigil "https://awoiaf.westeros.org/index.php/File:None.svg"^^xsd:string .
 
+got:house215 a got:House ;
+    got:attackerHouseIn got:battle1 ;
+    got:name "Free folk"^^xsd:string .
+
 got:house218 a got:House ;
     got:blazon "Two blue towers on silver-grey"^^xsd:string ;
     got:locatedIn got:region20 ;
@@ -19658,6 +19441,10 @@ got:house224 a got:House ;
     got:locatedIn got:region28 ;
     got:name "Garner"^^xsd:string ;
     got:sigil "https://awoiaf.westeros.org/index.php/File:House_Garner.svg"^^xsd:string .
+
+got:house227 a got:House ;
+    got:attackerHouseIn got:battle1 ;
+    got:name "Giants"^^xsd:string .
 
 got:house229 a got:House ;
     got:blazon "A silver fist on scarlet"^^xsd:string ;
@@ -20507,6 +20294,10 @@ got:house585 a got:House ;
     got:locatedIn got:region20 ;
     got:name "Terrick"^^xsd:string ;
     got:sigil "https://awoiaf.westeros.org/index.php/File:House_Terrick.svg"^^xsd:string .
+
+got:house588 a got:House ;
+    got:attackerHouseIn got:battle1 ;
+    got:name "Thenns"^^xsd:string .
 
 got:house593 a got:House ;
     got:blazon "A green dragon biting its tail on gold"^^xsd:string ;
@@ -21380,12 +21171,6 @@ wd:Q9010830 a got:wikidataProfile ;
 wd:Q96201256 a got:wikidataProfile ;
     got:isAbout got:character2048 .
 
-got:character1 a got:Character ;
-    got:name " Alysane Mormot"^^xsd:string .
-
-got:character10 a got:Character ;
-    got:name " Donal Noye"^^xsd:string .
-
 got:character1000 a got:Character ;
     got:apearedIn got:book2 ;
     got:culture "Reach"^^xsd:string ;
@@ -21441,21 +21226,6 @@ got:character1015 a got:Character ;
     got:name "Jonnel Stark"^^xsd:string ;
     got:popularity "0.127090301"^^xsd:float ;
     got:title "Winterfell"^^xsd:string .
-
-got:character1016 a got:Character ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house60 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 0 ;
-    got:name "Jonos Bracken"^^xsd:string ;
-    got:popularity "0.190635452"^^xsd:float ;
-    got:title "Stone Hedge"^^xsd:string .
 
 got:character1038 a got:Character ;
     got:age 23 ;
@@ -21594,9 +21364,6 @@ got:character1097 a got:Character ;
     got:name "Lanna Lannister"^^xsd:string ;
     got:popularity "0.073578595"^^xsd:float ;
     got:spouseOf got:character178 .
-
-got:character11 a got:Character ;
-    got:name " Flement Brax"^^xsd:string .
 
 got:character1102 a got:Character ;
     got:age 100 ;
@@ -21776,8 +21543,24 @@ got:character1138 a got:Character ;
     got:spouseOf got:character339 ;
     got:title "Stokeworth"^^xsd:string .
 
-got:character1145 a got:Character ;
-    got:name "Lord Andros Brax"^^xsd:string .
+got:character1143 a got:Character ;
+    got:age 23 ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:attackerCommanderOf got:battle31 ;
+    got:culture "The Reach"^^xsd:string ;
+    got:dateOfBirth 282 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house606 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 1 ;
+    got:name "Loras Tyrell"^^xsd:string ;
+    got:popularity "0.665551839"^^xsd:float ;
+    got:title "Ser"^^xsd:string .
 
 got:character1160 a got:Character ;
     got:age 41 ;
@@ -21864,24 +21647,6 @@ got:character1195 a got:Character ;
     got:popularity "0.260869565"^^xsd:float ;
     got:title "Master of coin"^^xsd:string .
 
-got:character1196 a got:Character ;
-    got:age 9 ;
-    got:apearedIn got:book1,
-        got:book2 ;
-    got:dateOfBirth 290 ;
-    got:dateOfDeath 299 ;
-    got:gender "female"^^xsd:string ;
-    got:hasHouse got:house153 ;
-    got:isAlive 0 ;
-    got:isNoble 1 ;
-    got:isPopular 0 ;
-    got:name "Lyman Darry"^^xsd:string ;
-    got:popularity "0.056856187"^^xsd:float ;
-    got:title "Lord of Darry"^^xsd:string .
-
-got:character12 a got:Character ;
-    got:name " Forley Prester"^^xsd:string .
-
 got:character1208 a got:Character ;
     got:age 46 ;
     got:apearedIn got:book2,
@@ -21949,6 +21714,17 @@ got:character1225 a got:Character ;
 got:character1233 a got:Character ;
     got:founderOf got:house386 ;
     got:name "Maldon Massey"^^xsd:string .
+
+got:character1240 a got:Character ;
+    got:attackerCommanderOf got:battle1 ;
+    got:culture "Free folk"^^xsd:string ;
+    got:defenderKingOf got:battle1 ;
+    got:gender "male"^^xsd:string ;
+    got:isAlive 1 ;
+    got:isNoble 0 ;
+    got:isPopular 1 ;
+    got:name "Mance Rayder"^^xsd:string ;
+    got:popularity "0.7090301"^^xsd:float .
 
 got:character1251 a got:Character ;
     got:apearedIn got:book3,
@@ -22074,9 +21850,6 @@ got:character1297 a got:Character ;
     got:isPopular 0 ;
     got:name "Meera Reed"^^xsd:string ;
     got:popularity "0.27090301"^^xsd:float .
-
-got:character13 a got:Character ;
-    got:name " Garlan Tyrell"^^xsd:string .
 
 got:character1305 a got:Character ;
     got:apearedIn got:book2,
@@ -22610,9 +22383,6 @@ got:character1499 a got:Character ;
     got:founderOf got:house403 ;
     got:name "Pate the Plowman"^^xsd:string .
 
-got:character15 a got:Character ;
-    got:name " Guyard Morrigen"^^xsd:string .
-
 got:character1502 a got:Character ;
     got:apearedIn got:book1,
         got:book2,
@@ -22733,9 +22503,6 @@ got:character1587 a got:Character ;
     got:name "Ramsay Bolton"^^xsd:string ;
     got:spouseOf got:character971 .
 
-got:character1589 a got:Character ;
-    got:name "Ramsey Bolton"^^xsd:string .
-
 got:character1594 a got:Character ;
     got:apearedIn got:book3,
         got:book4 ;
@@ -22748,9 +22515,6 @@ got:character1594 a got:Character ;
     got:popularity "0.060200669"^^xsd:float ;
     got:spouseOf got:character1898 ;
     got:title "Acorn Hall"^^xsd:string .
-
-got:character16 a got:Character ;
-    got:name " Halys Hornwood"^^xsd:string .
 
 got:character1601 a got:Character ;
     got:age 41 ;
@@ -22896,22 +22660,6 @@ got:character1640 a got:Character ;
     got:popularity "0.050167224"^^xsd:float ;
     got:spouseOf got:character227 .
 
-got:character165 a got:Character ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:dateOfDeath 299 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house358 ;
-    got:isAlive 0 ;
-    got:isNoble 1 ;
-    got:isPopular 0 ;
-    got:name "Amory Lorch"^^xsd:string ;
-    got:popularity "0.277591973"^^xsd:float ;
-    got:title "Ser"^^xsd:string .
-
 got:character1651 a got:Character ;
     got:age 10 ;
     got:apearedIn got:book1,
@@ -22958,9 +22706,6 @@ got:character1665 a got:Character ;
     got:founderOf got:house25 ;
     got:name "Robert I Baratheon"^^xsd:string .
 
-got:character1667 a got:Character ;
-    got:name "Robertt Glover"^^xsd:string .
-
 got:character1668 a got:Character ;
     got:apearedIn got:book1,
         got:book2,
@@ -22976,6 +22721,25 @@ got:character1668 a got:Character ;
     got:name "Robett Glover"^^xsd:string ;
     got:popularity "0.16722408"^^xsd:float ;
     got:spouseOf got:character1859 .
+
+got:character1680 a got:Character ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:attackerCommanderOf got:battle7 ;
+    got:culture "Northmen"^^xsd:string ;
+    got:dateOfDeath 299 ;
+    got:defenderCommanderOf got:battle28 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house95 ;
+    got:isAlive 0 ;
+    got:isNoble 1 ;
+    got:isPopular 1 ;
+    got:name "Rodrik Cassel"^^xsd:string ;
+    got:popularity "0.397993311"^^xsd:float ;
+    got:title "Ser"^^xsd:string .
 
 got:character1683 a got:Character ;
     got:age 15 ;
@@ -23033,22 +22797,6 @@ got:character1694 a got:Character ;
         got:character658 ;
     got:title "Coldmoat"^^xsd:string .
 
-got:character17 a got:Character ;
-    got:name " Harma Dogshead"^^xsd:string .
-
-got:character1702 a got:Character ;
-    got:apearedIn got:book3,
-        got:book4,
-        got:book5 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house93 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 0 ;
-    got:name "Rolland Storm"^^xsd:string ;
-    got:popularity "0.070234114"^^xsd:float ;
-    got:title "Ser"^^xsd:string .
-
 got:character1703 a got:Character ;
     got:gender "male"^^xsd:string ;
     got:hasHouse got:house609 ;
@@ -23058,31 +22806,6 @@ got:character1703 a got:Character ;
     got:name "Rolland Uffering"^^xsd:string ;
     got:popularity "0.023411371"^^xsd:float ;
     got:title "Ser"^^xsd:string .
-
-got:character1705 a got:Character ;
-    got:apearedIn got:book3,
-        got:book4 ;
-    got:gender "female"^^xsd:string ;
-    got:hasHouse got:house535 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 0 ;
-    got:name "Rolph Spicer"^^xsd:string ;
-    got:popularity "0.060200669"^^xsd:float ;
-    got:title "Ser"^^xsd:string .
-
-got:character1718 a got:Character ;
-    got:apearedIn got:book2,
-        got:book3,
-        got:book4 ;
-    got:dateOfDeath 300 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house63 ;
-    got:isAlive 0 ;
-    got:isNoble 0 ;
-    got:isPopular 0 ;
-    got:name "Rorge"^^xsd:string ;
-    got:popularity "0.16722408"^^xsd:float .
 
 got:character172 a got:Character ;
     got:founderOf got:house6 ;
@@ -23407,9 +23130,6 @@ got:character1798 a got:Character ;
     got:popularity "0.080267559"^^xsd:float ;
     got:title "Harrenhal"^^xsd:string .
 
-got:character18 a got:Character ;
-    got:name " Harrion Karstark"^^xsd:string .
-
 got:character1800 a got:Character ;
     got:apearedIn got:book3,
         got:book4,
@@ -23479,6 +23199,26 @@ got:character1814 a got:Character ;
     got:name "Simon Staunton"^^xsd:string ;
     got:popularity "0.016722408"^^xsd:float ;
     got:spouseOf got:character1694 ;
+    got:title "Ser"^^xsd:string .
+
+got:character1832 a got:Character ;
+    got:age 53 ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:culture "Westerman"^^xsd:string ;
+    got:dateOfBirth 246 ;
+    got:dateOfDeath 299 ;
+    got:defenderCommanderOf got:battle5 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house336 ;
+    got:isAlive 0 ;
+    got:isNoble 1 ;
+    got:isPopular 0 ;
+    got:name "Stafford Lannister"^^xsd:string ;
+    got:popularity "0.170568562"^^xsd:float ;
     got:title "Ser"^^xsd:string .
 
 got:character1848 a got:Character ;
@@ -23658,8 +23398,26 @@ got:character1898 a got:Character ;
     got:spouseOf got:character1594 ;
     got:title "Acorn Hall"^^xsd:string .
 
-got:character19 a got:Character ;
-    got:name " Helman Tallhart"^^xsd:string .
+got:character1900 a got:Character ;
+    got:age 27 ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:attackerCommanderOf got:battle18,
+        got:battle8 ;
+    got:culture "Ironmen"^^xsd:string ;
+    got:dateOfBirth 278 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house257 ;
+    got:heirOf got:character233 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 1 ;
+    got:name "Theon Greyjoy"^^xsd:string ;
+    got:popularity "1.0"^^xsd:float ;
+    got:title "green lands"^^xsd:string .
 
 got:character1915 a got:Character ;
     got:apearedIn got:book3,
@@ -23841,21 +23599,6 @@ got:character1974 a got:Character ;
     got:popularity "0.130434783"^^xsd:float ;
     got:spouseOf got:character1971 .
 
-got:character1976 a got:Character ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house45 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 0 ;
-    got:name "Tytos Blackwood"^^xsd:string ;
-    got:popularity "0.220735786"^^xsd:float ;
-    got:title "Raventree Hall"^^xsd:string .
-
 got:character1978 a got:Character ;
     got:age 38 ;
     got:apearedIn got:book2,
@@ -23872,12 +23615,6 @@ got:character1978 a got:Character ;
     got:popularity "0.063545151"^^xsd:float ;
     got:spouseOf got:character2146 ;
     got:title "Ser"^^xsd:string .
-
-got:character2 a got:Character ;
-    got:name " Andros Brax"^^xsd:string .
-
-got:character20 a got:Character ;
-    got:name " Imry Florent"^^xsd:string .
 
 got:character2004 a got:Character ;
     got:founderOf got:house290 ;
@@ -23925,22 +23662,6 @@ got:character2011 a got:Character ;
     got:founderOf got:house575 ;
     got:name "Valyrian dragonlords & Aenar Targaryen"^^xsd:string .
 
-got:character2014 a got:Character ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4 ;
-    got:culture "Qohor"^^xsd:string ;
-    got:dateOfDeath 300 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house63 ;
-    got:isAlive 0 ;
-    got:isNoble 1 ;
-    got:isPopular 0 ;
-    got:name "Vargo Hoat"^^xsd:string ;
-    got:popularity "0.210702341"^^xsd:float ;
-    got:title "Lord of Harrenhal"^^xsd:string .
-
 got:character2016 a got:Character ;
     got:apearedIn got:book1,
         got:book2,
@@ -23980,6 +23701,25 @@ got:character2021 a got:Character ;
     got:name "Victaria Tyrell"^^xsd:string ;
     got:popularity "0.133779264"^^xsd:float ;
     got:spouseOf got:character997 .
+
+got:character2022 a got:Character ;
+    got:age 37 ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:attackerCommanderOf got:battle4 ;
+    got:culture "Ironborn"^^xsd:string ;
+    got:dateOfBirth 268 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house257 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 1 ;
+    got:name "Victarion Greyjoy"^^xsd:string ;
+    got:popularity "0.705685619"^^xsd:float ;
+    got:title "Lord Captain of the Iron Fleet"^^xsd:string .
 
 got:character2029 a got:Character ;
     got:age 22 ;
@@ -24139,9 +23879,6 @@ got:character2097 a got:Character ;
     got:name "Willas Tyrell"^^xsd:string ;
     got:popularity "0.2909699"^^xsd:float .
 
-got:character21 a got:Character ;
-    got:name " Jacelyn Bywater"^^xsd:string .
-
 got:character2121 a got:Character ;
     got:apearedIn got:book2,
         got:book3,
@@ -24294,9 +24031,6 @@ got:character229 a got:Character ;
     got:popularity "0.474916388"^^xsd:float ;
     got:title "Prince of Dragonstone"^^xsd:string .
 
-got:character23 a got:Character ;
-    got:name " Jason Mallister"^^xsd:string .
-
 got:character231 a got:Character ;
     got:apearedIn got:book3,
         got:book4,
@@ -24325,9 +24059,6 @@ got:character239 a got:Character ;
     got:popularity "0.163879599"^^xsd:float ;
     got:title "Barrowton"^^xsd:string .
 
-got:character24 a got:Character ;
-    got:name " Jon Snow"^^xsd:string .
-
 got:character243 a got:Character ;
     got:age 69 ;
     got:apearedIn got:book1,
@@ -24346,9 +24077,6 @@ got:character243 a got:Character ;
     got:popularity "1.0"^^xsd:float ;
     got:title "Ser"^^xsd:string .
 
-got:character25 a got:Character ;
-    got:name " Karyl Vance"^^xsd:string .
-
 got:character259 a got:Character ;
     got:apearedIn got:book2,
         got:book3,
@@ -24361,12 +24089,6 @@ got:character259 a got:Character ;
     got:name "Bellena Hawick"^^xsd:string ;
     got:popularity "0.133779264"^^xsd:float ;
     got:spouseOf got:character891 .
-
-got:character26 a got:Character ;
-    got:name " Kevan Lannister"^^xsd:string .
-
-got:character27 a got:Character ;
-    got:name " Leo Lefford"^^xsd:string .
 
 got:character270 a got:Character ;
     got:founderOf got:house315 ;
@@ -24408,9 +24130,6 @@ got:character273 a got:Character ;
     got:popularity "0.401337793"^^xsd:float ;
     got:title "First Ranger"^^xsd:string .
 
-got:character28 a got:Character ;
-    got:name " Leobald Tallhart"^^xsd:string .
-
 got:character283 a got:Character ;
     got:apearedIn got:book2,
         got:book3,
@@ -24426,6 +24145,24 @@ got:character283 a got:Character ;
     got:popularity "0.063545151"^^xsd:float ;
     got:spouseOf got:character1117 .
 
+got:character284 a got:Character ;
+    got:age 23 ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:dateOfBirth 276 ;
+    got:dateOfDeath 299 ;
+    got:defenderCommanderOf got:battle0 ;
+    got:gender "male"^^xsd:string ;
+    got:isAlive 0 ;
+    got:isNoble 1 ;
+    got:isPopular 1 ;
+    got:name "Beric Dondarrion"^^xsd:string ;
+    got:popularity "0.434782609"^^xsd:float ;
+    got:title "Lord of Blackhaven"^^xsd:string .
+
 got:character286 a got:Character ;
     got:apearedIn got:book2 ;
     got:culture "Northmen"^^xsd:string ;
@@ -24437,9 +24174,6 @@ got:character286 a got:Character ;
     got:name "Beron Stark"^^xsd:string ;
     got:popularity "0.234113712"^^xsd:float ;
     got:title "Winterfell"^^xsd:string .
-
-got:character29 a got:Character ;
-    got:name " Loras Tyrell"^^xsd:string .
 
 got:character292 a got:Character ;
     got:motherOf got:character928 ;
@@ -24474,12 +24208,6 @@ got:character298 a got:Character ;
     got:popularity "0.066889632"^^xsd:float ;
     got:title "Lady"^^xsd:string .
 
-got:character3 a got:Character ;
-    got:name " Antario Jast"^^xsd:string .
-
-got:character30 a got:Character ;
-    got:name " Lyle Crakehall"^^xsd:string .
-
 got:character300 a got:Character ;
     got:apearedIn got:book2,
         got:book3,
@@ -24493,15 +24221,29 @@ got:character300 a got:Character ;
     got:popularity "0.140468227"^^xsd:float ;
     got:spouseOf got:character1870 .
 
-got:character31 a got:Character ;
-    got:name " Mace Tyrell"^^xsd:string .
-
 got:character319 a got:Character ;
     got:founderOf got:house82 ;
     got:name "Bors the Breaker"^^xsd:string .
 
-got:character32 a got:Character ;
-    got:name " Magnar Styr"^^xsd:string .
+got:character323 a got:Character ;
+    got:age 15 ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:culture "Northmen"^^xsd:string ;
+    got:dateOfBirth 290 ;
+    got:defenderCommanderOf got:battle8 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house542 ;
+    got:heirOf got:character1656 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 1 ;
+    got:name "Bran Stark"^^xsd:string ;
+    got:popularity "1.0"^^xsd:float ;
+    got:title "Prince of Winterfell"^^xsd:string .
 
 got:character324 a got:Character ;
     got:apearedIn got:book1,
@@ -24561,9 +24303,6 @@ got:character330 a got:Character ;
     got:popularity "0.143812709"^^xsd:float ;
     got:title "Winterfell"^^xsd:string .
 
-got:character34 a got:Character ;
-    got:name " Medger Cerwyn"^^xsd:string .
-
 got:character340 a got:Character ;
     got:founderOf got:house492 ;
     got:name "Bronze King"^^xsd:string .
@@ -24584,8 +24323,24 @@ got:character350 a got:Character ;
     got:popularity "0.605351171"^^xsd:float ;
     got:title "Ser"^^xsd:string .
 
-got:character36 a got:Character ;
-    got:name " Raxter Redwyne"^^xsd:string .
+got:character351 a got:Character ;
+    got:age 63 ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:culture "Rivermen"^^xsd:string ;
+    got:dateOfBirth 242 ;
+    got:defenderCommanderOf got:battle33 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house603 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 1 ;
+    got:name "Brynden Tully"^^xsd:string ;
+    got:popularity "0.341137124"^^xsd:float ;
+    got:title "Ser"^^xsd:string .
 
 got:character361 a got:Character ;
     got:founderOf got:house10 ;
@@ -24611,9 +24366,6 @@ got:character369 a got:Character ;
     got:founderOf got:house259 ;
     got:name "Cadet of Stark"^^xsd:string .
 
-got:character37 a got:Character ;
-    got:name " Robett Glover"^^xsd:string .
-
 got:character377 a got:Character ;
     got:apearedIn got:book2,
         got:book3,
@@ -24625,9 +24377,6 @@ got:character377 a got:Character ;
     got:isPopular 0 ;
     got:name "Carolei Waynwood"^^xsd:string ;
     got:popularity "0.140468227"^^xsd:float .
-
-got:character38 a got:Character ;
-    got:name " Roland Crakehall"^^xsd:string .
 
 got:character380 a got:Character ;
     got:apearedIn got:book2,
@@ -24644,49 +24393,13 @@ got:character380 a got:Character ;
     got:popularity "0.10367893"^^xsd:float ;
     got:spouseOf got:character1839 .
 
-got:character39 a got:Character ;
-    got:name " Rolland Storm"^^xsd:string .
-
-got:character4 a got:Character ;
-    got:name " Black Walder Frey"^^xsd:string .
-
-got:character40 a got:Character ;
-    got:name " Roose Bolton"^^xsd:string .
-
-got:character41 a got:Character ;
-    got:name " Ryman Fey"^^xsd:string .
-
 got:character410 a got:Character ;
     got:founderOf got:house114 ;
     got:name "Clegane"^^xsd:string .
 
-got:character413 a got:Character ;
-    got:apearedIn got:book1,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:culture "Rivermen"^^xsd:string ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house450 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 0 ;
-    got:name "Clement Piper"^^xsd:string ;
-    got:popularity "0.070234114"^^xsd:float ;
-    got:title "Pinkmaiden"^^xsd:string .
-
-got:character42 a got:Character ;
-    got:name " Salladhor Saan"^^xsd:string .
-
-got:character43 a got:Character ;
-    got:name " Sandor Clegane"^^xsd:string .
-
 got:character434 a got:Character ;
     got:founderOf got:house96 ;
     got:name "Corlos"^^xsd:string .
-
-got:character44 a got:Character ;
-    got:name " Smalljon Umber"^^xsd:string .
 
 got:character445 a got:Character ;
     got:founderOf got:house137 ;
@@ -24705,9 +24418,6 @@ got:character449 a got:Character ;
     got:name "Cregan Stark"^^xsd:string ;
     got:popularity "0.484949833"^^xsd:float ;
     got:title "Winterfell"^^xsd:string .
-
-got:character45 a got:Character ;
-    got:name " Theon Greyjoy "^^xsd:string .
 
 got:character453 a got:Character ;
     got:age 48 ;
@@ -24752,9 +24462,6 @@ got:character458 a got:Character ;
     got:isPopular 0 ;
     got:name "Daario Naharis"^^xsd:string ;
     got:popularity "0.220735786"^^xsd:float .
-
-got:character46 a got:Character ;
-    got:name " Tormund Giantsbane"^^xsd:string .
 
 got:character462 a got:Character ;
     got:age 28 ;
@@ -24802,9 +24509,6 @@ got:character476 a got:Character ;
     got:popularity "0.130434783"^^xsd:float ;
     got:title "Prince of Dragonstone"^^xsd:string .
 
-got:character48 a got:Character ;
-    got:name " Tywin Lannister"^^xsd:string .
-
 got:character480 a got:Character ;
     got:apearedIn got:book2,
         got:book3,
@@ -24818,9 +24522,6 @@ got:character480 a got:Character ;
     got:popularity "0.10367893"^^xsd:float ;
     got:spouseOf got:character1223 ;
     got:title "Ser"^^xsd:string .
-
-got:character49 a got:Character ;
-    got:name " Vance"^^xsd:string .
 
 got:character492 a got:Character ;
     got:apearedIn got:book3,
@@ -24859,9 +24560,6 @@ got:character495 a got:Character ;
     got:name "Damon Lannister (son of Jason)"^^xsd:string ;
     got:popularity "0.060200669"^^xsd:float .
 
-got:character50 a got:Character ;
-    got:name " Varamyr"^^xsd:string .
-
 got:character504 a got:Character ;
     got:age 53 ;
     got:apearedIn got:book1,
@@ -24893,27 +24591,6 @@ got:character507 a got:Character ;
     got:name "Darlessa Marbrand"^^xsd:string ;
     got:popularity "0.08361204"^^xsd:float ;
     got:spouseOf got:character1967 .
-
-got:character51 a got:Character ;
-    got:name " Vargo Hoat"^^xsd:string .
-
-got:character510 a got:Character ;
-    got:age 32 ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:culture "Westerman"^^xsd:string ;
-    got:dateOfBirth 273 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house336 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 0 ;
-    got:name "Daven Lannister"^^xsd:string ;
-    got:popularity "0.20735786"^^xsd:float ;
-    got:title "Ser"^^xsd:string .
 
 got:character512 a got:Character ;
     got:apearedIn got:book2,
@@ -24950,9 +24627,6 @@ got:character526 a got:Character ;
     got:name "Denyse Hightower"^^xsd:string ;
     got:popularity "0.073578595"^^xsd:float ;
     got:spouseOf got:character530 .
-
-got:character53 a got:Character ;
-    got:name " Walder Rivers"^^xsd:string .
 
 got:character530 a got:Character ;
     got:apearedIn got:book4 ;
@@ -25338,9 +25012,6 @@ got:character692 a got:Character ;
     got:popularity "0.013377926"^^xsd:float ;
     got:title "Ser"^^xsd:string .
 
-got:character7 a got:Character ;
-    got:name " Cortnay Penrose"^^xsd:string .
-
 got:character702 a got:Character ;
     got:apearedIn got:book2,
         got:book3,
@@ -25425,19 +25096,6 @@ got:character730 a got:Character ;
     got:founderOf got:house469 ;
     got:name "Gerrick Kingsblood"^^xsd:string .
 
-got:character735 a got:Character ;
-    got:apearedIn got:book3,
-        got:book4,
-        got:book5 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house188 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 0 ;
-    got:name "Gilbert Farring"^^xsd:string ;
-    got:popularity "0.046822742"^^xsd:float ;
-    got:title "Ser"^^xsd:string .
-
 got:character736 a got:Character ;
     got:founderOf got:house474 ;
     got:name "Gilbert of the Vines"^^xsd:string .
@@ -25471,6 +25129,28 @@ got:character76 a got:Character ;
     got:popularity "0.0"^^xsd:float ;
     got:title "Prince"^^xsd:string .
 
+got:character766 a got:Character ;
+    got:age 35 ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:attackerCommanderOf got:battle0,
+        got:battle16,
+        got:battle23,
+        got:battle24 ;
+    got:dateOfBirth 265 ;
+    got:dateOfDeath 300 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house113 ;
+    got:isAlive 0 ;
+    got:isNoble 1 ;
+    got:isPopular 1 ;
+    got:name "Gregor Clegane"^^xsd:string ;
+    got:popularity "0.836120401"^^xsd:float ;
+    got:title "Ser"^^xsd:string .
+
 got:character770 a got:Character ;
     got:founderOf got:house233 ;
     got:name "Grey King's brother"^^xsd:string .
@@ -25498,9 +25178,6 @@ got:character785 a got:Character ;
     got:popularity "0.053511706"^^xsd:float ;
     got:spouseOf got:character965 ;
     got:title "Ser"^^xsd:string .
-
-got:character8 a got:Character ;
-    got:name " Cotter Pyke"^^xsd:string .
 
 got:character817 a got:Character ;
     got:apearedIn got:book1,
@@ -25573,23 +25250,6 @@ got:character851 a got:Character ;
     got:isPopular 0 ;
     got:name "Harwin Strong"^^xsd:string ;
     got:popularity "0.086956522"^^xsd:float ;
-    got:title "Ser"^^xsd:string .
-
-got:character865 a got:Character ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:culture "Northmen"^^xsd:string ;
-    got:dateOfDeath 299 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house571 ;
-    got:isAlive 0 ;
-    got:isNoble 1 ;
-    got:isPopular 0 ;
-    got:name "Helman Tallhart"^^xsd:string ;
-    got:popularity "0.130434783"^^xsd:float ;
     got:title "Ser"^^xsd:string .
 
 got:character871 a got:Character ;
@@ -25737,6 +25397,27 @@ got:character926 a got:Character ;
     got:popularity "0.280936455"^^xsd:float ;
     got:title "PrincessQueen"^^xsd:string .
 
+got:character934 a got:Character ;
+    got:age 39 ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:attackerCommanderOf got:battle14,
+        got:battle6 ;
+    got:culture "Westerlands"^^xsd:string ;
+    got:dateOfBirth 266 ;
+    got:defenderCommanderOf got:battle19 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house336 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 1 ;
+    got:name "Jaime Lannister"^^xsd:string ;
+    got:popularity "1.0"^^xsd:float ;
+    got:title "Ser"^^xsd:string .
+
 got:character936 a got:Character ;
     got:age 39 ;
     got:apearedIn got:book2,
@@ -25814,22 +25495,6 @@ got:character942 a got:Character ;
     got:popularity "0.147157191"^^xsd:float ;
     got:spouseOf got:character145 ;
     got:title "Ser"^^xsd:string .
-
-got:character946 a got:Character ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:culture "Riverlands"^^xsd:string ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house371 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 0 ;
-    got:name "Jason Mallister"^^xsd:string ;
-    got:popularity "0.127090301"^^xsd:float ;
-    got:title "Seagard"^^xsd:string .
 
 got:character959 a got:Character ;
     got:age 69 ;
@@ -26222,9 +25887,6 @@ got:house214 a got:House ;
     got:name "Fowler of Skyreach"^^xsd:string ;
     got:sigil "https://awoiaf.westeros.org/index.php/File:House_Fowler.svg"^^xsd:string .
 
-got:house215 a got:House ;
-    got:name "Free folk"^^xsd:string .
-
 got:house22 a got:House ;
     got:blazon "A leaping blue swordfish on fretty silver on white"^^xsd:string ;
     got:hasFounder got:character1921 ;
@@ -26250,9 +25912,6 @@ got:house225 a got:House ;
 
 got:house226 a got:House ;
     got:name "Ghazeen"^^xsd:string .
-
-got:house227 a got:House ;
-    got:name "Giants"^^xsd:string .
 
 got:house234 a got:House ;
     got:hasFounder got:character365 ;
@@ -26871,9 +26530,6 @@ got:house583 a got:House ;
 got:house586 a got:House ;
     got:name "The Citadel"^^xsd:string .
 
-got:house588 a got:House ;
-    got:name "Thenns"^^xsd:string .
-
 got:house589 a got:House ;
     got:name "Thirteen"^^xsd:string .
 
@@ -27036,6 +26692,10 @@ got:house71 a got:House ;
     got:name "Broom"^^xsd:string ;
     got:sigil "https://awoiaf.westeros.org/index.php/File:House_Broom.svg"^^xsd:string .
 
+got:house73 a got:House ;
+    got:attackerHouseIn got:battle10 ;
+    got:name "Brotherhood without Banners"^^xsd:string .
+
 got:house77 a got:House ;
     got:locatedIn got:region3 ;
     got:name "Brune of the Dyre Den"^^xsd:string ;
@@ -27093,8 +26753,20 @@ got:region5 a got:Region ;
 got:region9 a got:Region ;
     got:name "Iron Islands (origin); Riverlands"^^xsd:string .
 
-got:character0 a got:Character ;
-    got:name " Addam Marbrand"^^xsd:string .
+got:battle10 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:battleType "pitched battle"^^xsd:string ;
+    got:name "Battle of the Burning Septry"^^xsd:string ;
+    got:occurredIn got:region20 ;
+    got:year 299 .
+
+got:battle26 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:battleType "razing"^^xsd:string ;
+    got:location "Saltpans"^^xsd:string ;
+    got:name "Sack of Saltpans"^^xsd:string ;
+    got:occurredIn got:region20 ;
+    got:year 300 .
 
 got:character1020 a got:Character ;
     got:age 51 ;
@@ -27175,24 +26847,6 @@ got:character1132 a got:Character ;
     got:popularity "0.150501672"^^xsd:float ;
     got:spouseOf got:character1636 ;
     got:title "Hightower"^^xsd:string .
-
-got:character1143 a got:Character ;
-    got:age 23 ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:culture "The Reach"^^xsd:string ;
-    got:dateOfBirth 282 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house606 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 1 ;
-    got:name "Loras Tyrell"^^xsd:string ;
-    got:popularity "0.665551839"^^xsd:float ;
-    got:title "Ser"^^xsd:string .
 
 got:character116 a got:Character ;
     got:apearedIn got:book2,
@@ -27275,6 +26929,25 @@ got:character1214 a got:Character ;
     got:spouseOf got:character1514 ;
     got:title "Lady of the Vale"^^xsd:string .
 
+got:character1219 a got:Character ;
+    got:age 49 ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:attackerCommanderOf got:battle29 ;
+    got:dateOfBirth 256 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house606 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 1 ;
+    got:name "Mace Tyrell"^^xsd:string ;
+    got:popularity "0.856187291"^^xsd:float ;
+    got:spouseOf got:character113 ;
+    got:title "Highgarden"^^xsd:string .
+
 got:character1249 a got:Character ;
     got:age 22 ;
     got:apearedIn got:book1,
@@ -27340,6 +27013,64 @@ got:character1558 a got:Character ;
     got:name "Quellon Greyjoy"^^xsd:string ;
     got:popularity "0.090301003"^^xsd:float ;
     got:title "Lord of the Iron Islands"^^xsd:string .
+
+got:character1588 a got:Character ;
+    got:age 23 ;
+    got:apearedIn got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:attackerCommanderOf got:battle28 ;
+    got:culture "Northmen"^^xsd:string ;
+    got:dateOfBirth 282 ;
+    got:founderOf got:house54 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house55 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 1 ;
+    got:name "Ramsay Snow"^^xsd:string ;
+    got:popularity "0.461538462"^^xsd:float ;
+    got:title "Lord of the Hornwood"^^xsd:string .
+
+got:character1591 a got:Character ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:defenderCommanderOf got:battle3 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house576 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 1 ;
+    got:name "Randyll Tarly"^^xsd:string ;
+    got:popularity "0.618729097"^^xsd:float ;
+    got:spouseOf got:character1309 ;
+    got:title "Horn Hill"^^xsd:string .
+
+got:character1616 a got:Character ;
+    got:age 22 ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:culture "Stormlands"^^xsd:string ;
+    got:dateOfBirth 277 ;
+    got:dateOfDeath 299 ;
+    got:defenderCommanderOf got:battle35 ;
+    got:defenderKingOf got:battle35 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house23 ;
+    got:isAlive 0 ;
+    got:isNoble 1 ;
+    got:isPopular 1 ;
+    got:name "Renly Baratheon"^^xsd:string ;
+    got:popularity "1.0"^^xsd:float ;
+    got:spouseOf got:character1249 ;
+    got:title "Lord Paramount of the Stormlands"^^xsd:string .
 
 got:character1624 a got:Character ;
     got:age 24 ;
@@ -27473,6 +27204,30 @@ got:character1647 a got:Character ;
     got:popularity "0.27090301"^^xsd:float ;
     got:title "Winterfell"^^xsd:string .
 
+got:character1716 a got:Character ;
+    got:age 45 ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:attackerCommanderOf got:battle15,
+        got:battle25 ;
+    got:culture "Northmen"^^xsd:string ;
+    got:dateOfBirth 260 ;
+    got:defenderCommanderOf got:battle16,
+        got:battle36 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house53 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 1 ;
+    got:name "Roose Bolton"^^xsd:string ;
+    got:popularity "0.97993311"^^xsd:float ;
+    got:spouseOf got:character2035,
+        got:character294 ;
+    got:title "Dreadfort"^^xsd:string .
+
 got:character1765 a got:Character ;
     got:age 19 ;
     got:apearedIn got:book1,
@@ -27490,25 +27245,6 @@ got:character1765 a got:Character ;
     got:name "Sansa Stark"^^xsd:string ;
     got:popularity "1.0"^^xsd:float ;
     got:title "Princess"^^xsd:string .
-
-got:character1832 a got:Character ;
-    got:age 53 ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:culture "Westerman"^^xsd:string ;
-    got:dateOfBirth 246 ;
-    got:dateOfDeath 299 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house336 ;
-    got:isAlive 0 ;
-    got:isNoble 1 ;
-    got:isPopular 0 ;
-    got:name "Stafford Lannister"^^xsd:string ;
-    got:popularity "0.170568562"^^xsd:float ;
-    got:title "Ser"^^xsd:string .
 
 got:character1839 a got:Character ;
     got:age 32 ;
@@ -27533,6 +27269,26 @@ got:character189 a got:Character ;
         got:house621 ;
     got:name "Armistead Vance"^^xsd:string .
 
+got:character1971 a got:Character ;
+    got:age 32 ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:dateOfBirth 273 ;
+    got:defenderCommanderOf got:battle9 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house336 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 1 ;
+    got:name "Tyrion Lannister"^^xsd:string ;
+    got:popularity "1.0"^^xsd:float ;
+    got:spouseOf got:character1765,
+        got:character1974 ;
+    got:title "Hand of the King"^^xsd:string .
+
 got:character1979 a got:Character ;
     got:age 47 ;
     got:apearedIn got:book3,
@@ -27549,23 +27305,26 @@ got:character1979 a got:Character ;
     got:popularity "0.210702341"^^xsd:float ;
     got:title "Casterly Rock"^^xsd:string .
 
-got:character2022 a got:Character ;
-    got:age 37 ;
+got:character1982 a got:Character ;
+    got:age 58 ;
     got:apearedIn got:book1,
         got:book2,
         got:book3,
         got:book4,
         got:book5 ;
-    got:culture "Ironborn"^^xsd:string ;
-    got:dateOfBirth 268 ;
+    got:attackerCommanderOf got:battle13 ;
+    got:dateOfBirth 242 ;
+    got:dateOfDeath 300 ;
+    got:defenderCommanderOf got:battle15 ;
     got:gender "male"^^xsd:string ;
-    got:hasHouse got:house257 ;
-    got:isAlive 1 ;
+    got:hasHouse got:house336 ;
+    got:isAlive 0 ;
     got:isNoble 1 ;
     got:isPopular 1 ;
-    got:name "Victarion Greyjoy"^^xsd:string ;
-    got:popularity "0.705685619"^^xsd:float ;
-    got:title "Lord Captain of the Iron Fleet"^^xsd:string .
+    got:name "Tywin Lannister"^^xsd:string ;
+    got:popularity "1.0"^^xsd:float ;
+    got:spouseOf got:character981 ;
+    got:title "Casterly Rock"^^xsd:string .
 
 got:character2025 a got:Character ;
     got:age 72 ;
@@ -27587,6 +27346,33 @@ got:character2025 a got:Character ;
     got:popularity "0.277591973"^^xsd:float ;
     got:title "QueenDowager Queen"^^xsd:string .
 
+got:character2041 a got:Character ;
+    got:age 97 ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:attackerCommanderOf got:battle34,
+        got:battle37 ;
+    got:culture "Rivermen"^^xsd:string ;
+    got:dateOfBirth 208 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house216 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 1 ;
+    got:name "Walder Frey"^^xsd:string ;
+    got:popularity "0.89632107"^^xsd:float ;
+    got:spouseOf got:character1038,
+        got:character156,
+        got:character161,
+        got:character1769,
+        got:character177,
+        got:character298,
+        got:character457 ;
+    got:title "Lord of the Crossing"^^xsd:string .
+
 got:character2048 a got:Character ;
     got:apearedIn got:book1,
         got:book2,
@@ -27603,8 +27389,25 @@ got:character2048 a got:Character ;
     got:popularity "0.080267559"^^xsd:float ;
     got:title "Ser"^^xsd:string .
 
-got:character22 a got:Character ;
-    got:name " Jaime Lannister"^^xsd:string .
+got:character211 a got:Character ;
+    got:age 30 ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book4,
+        got:book5 ;
+    got:attackerCommanderOf got:battle2 ;
+    got:culture "Ironborn"^^xsd:string ;
+    got:dateOfBirth 275 ;
+    got:defenderCommanderOf got:battle22 ;
+    got:gender "female"^^xsd:string ;
+    got:hasHouse got:house257 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 1 ;
+    got:name "Asha Greyjoy"^^xsd:string ;
+    got:popularity "0.7090301"^^xsd:float ;
+    got:spouseOf got:character643 ;
+    got:title "Black Wind"^^xsd:string .
 
 got:character220 a got:Character ;
     got:age 100 ;
@@ -27620,23 +27423,6 @@ got:character220 a got:Character ;
     got:spouseOf got:character142 ;
     got:title "Lady"^^xsd:string .
 
-got:character284 a got:Character ;
-    got:age 23 ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:dateOfBirth 276 ;
-    got:dateOfDeath 299 ;
-    got:gender "male"^^xsd:string ;
-    got:isAlive 0 ;
-    got:isNoble 1 ;
-    got:isPopular 1 ;
-    got:name "Beric Dondarrion"^^xsd:string ;
-    got:popularity "0.434782609"^^xsd:float ;
-    got:title "Lord of Blackhaven"^^xsd:string .
-
 got:character294 a got:Character ;
     got:apearedIn got:book4,
         got:book5 ;
@@ -27649,28 +27435,6 @@ got:character294 a got:Character ;
     got:name "Bethany Bolton"^^xsd:string ;
     got:popularity "0.043478261"^^xsd:float ;
     got:title "the Dreadfort"^^xsd:string .
-
-got:character323 a got:Character ;
-    got:age 15 ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:culture "Northmen"^^xsd:string ;
-    got:dateOfBirth 290 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house542 ;
-    got:heirOf got:character1656 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 1 ;
-    got:name "Bran Stark"^^xsd:string ;
-    got:popularity "1.0"^^xsd:float ;
-    got:title "Prince of Winterfell"^^xsd:string .
-
-got:character33 a got:Character ;
-    got:name " Mathis Rowan"^^xsd:string .
 
 got:character339 a got:Character ;
     got:age 41 ;
@@ -27688,27 +27452,6 @@ got:character339 a got:Character ;
     got:name "Bronn"^^xsd:string ;
     got:popularity "0.471571906"^^xsd:float ;
     got:spouseOf got:character1138 ;
-    got:title "Ser"^^xsd:string .
-
-got:character35 a got:Character ;
-    got:name " Randyll Tarly"^^xsd:string .
-
-got:character351 a got:Character ;
-    got:age 63 ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:culture "Rivermen"^^xsd:string ;
-    got:dateOfBirth 242 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house603 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 1 ;
-    got:name "Brynden Tully"^^xsd:string ;
-    got:popularity "0.341137124"^^xsd:float ;
     got:title "Ser"^^xsd:string .
 
 got:character364 a got:Character ;
@@ -27817,9 +27560,6 @@ got:character468 a got:Character ;
         got:character1637 ;
     got:title "Commander of the City Watch"^^xsd:string .
 
-got:character47 a got:Character ;
-    got:name " Tytos Blackwood"^^xsd:string .
-
 got:character471 a got:Character ;
     got:age 21 ;
     got:apearedIn got:book1,
@@ -27853,9 +27593,6 @@ got:character472 a got:Character ;
     got:popularity "0.093645485"^^xsd:float ;
     got:title "Princess"^^xsd:string .
 
-got:character482 a got:Character ;
-    got:name "Dagmer Cleftjaw"^^xsd:string .
-
 got:character514 a got:Character ;
     got:apearedIn got:book2,
         got:book3,
@@ -27868,9 +27605,6 @@ got:character514 a got:Character ;
     got:name "Delena Florent"^^xsd:string ;
     got:popularity "0.117056856"^^xsd:float ;
     got:spouseOf got:character890 .
-
-got:character52 a got:Character ;
-    got:name " Victarion Greyjoy"^^xsd:string .
 
 got:character538 a got:Character ;
     got:age 18 ;
@@ -27886,9 +27620,6 @@ got:character538 a got:Character ;
     got:name "Dickon Tarly"^^xsd:string ;
     got:popularity "0.10367893"^^xsd:float ;
     got:spouseOf got:character612 .
-
-got:character54 a got:Character ;
-    got:name " Wylis Manderly"^^xsd:string .
 
 got:character557 a got:Character ;
     got:age 58 ;
@@ -27928,9 +27659,6 @@ got:character587 a got:Character ;
     got:popularity "1.0"^^xsd:float ;
     got:spouseOf got:character384 ;
     got:title "Winterfell"^^xsd:string .
-
-got:character6 a got:Character ;
-    got:name " Cley Cerwyn"^^xsd:string .
 
 got:character614 a got:Character ;
     got:age 27 ;
@@ -28063,9 +27791,6 @@ got:character897 a got:Character ;
     got:popularity "0.177257525"^^xsd:float ;
     got:spouseOf got:character1041 ;
     got:title "Greywater Watch"^^xsd:string .
-
-got:character9 a got:Character ;
-    got:name " Davos Seaworth"^^xsd:string .
 
 got:character918 a got:Character ;
     got:apearedIn got:book1,
@@ -28533,9 +28258,6 @@ got:house675 a got:House ;
     got:name "Yew"^^xsd:string ;
     got:sigil "https://awoiaf.westeros.org/index.php/File:House_Yew.svg"^^xsd:string .
 
-got:house73 a got:House ;
-    got:name "Brotherhood without Banners"^^xsd:string .
-
 got:house84 a got:House ;
     got:name "Burned Men"^^xsd:string .
 
@@ -28568,36 +28290,6 @@ got:character1092 a got:Character ;
     got:name "Lancel Lannister"^^xsd:string ;
     got:popularity "0.47826087"^^xsd:float ;
     got:title "Ser"^^xsd:string .
-
-got:character1219 a got:Character ;
-    got:age 49 ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:dateOfBirth 256 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house606 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 1 ;
-    got:name "Mace Tyrell"^^xsd:string ;
-    got:popularity "0.856187291"^^xsd:float ;
-    got:spouseOf got:character113 ;
-    got:title "Highgarden"^^xsd:string .
-
-got:character1240 a got:Character ;
-    got:culture "Free folk"^^xsd:string ;
-    got:gender "male"^^xsd:string ;
-    got:isAlive 1 ;
-    got:isNoble 0 ;
-    got:isPopular 1 ;
-    got:name "Mance Rayder"^^xsd:string ;
-    got:popularity "0.7090301"^^xsd:float .
-
-got:character14 a got:Character ;
-    got:name " Gregor Clegane"^^xsd:string .
 
 got:character1463 a got:Character ;
     got:apearedIn got:book1 ;
@@ -28639,95 +28331,6 @@ got:character154 a got:Character ;
     got:name "Alysanne Targaryen"^^xsd:string ;
     got:popularity "0.277591973"^^xsd:float .
 
-got:character1588 a got:Character ;
-    got:age 23 ;
-    got:apearedIn got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:culture "Northmen"^^xsd:string ;
-    got:dateOfBirth 282 ;
-    got:founderOf got:house54 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house55 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 1 ;
-    got:name "Ramsay Snow"^^xsd:string ;
-    got:popularity "0.461538462"^^xsd:float ;
-    got:title "Lord of the Hornwood"^^xsd:string .
-
-got:character1591 a got:Character ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house576 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 1 ;
-    got:name "Randyll Tarly"^^xsd:string ;
-    got:popularity "0.618729097"^^xsd:float ;
-    got:spouseOf got:character1309 ;
-    got:title "Horn Hill"^^xsd:string .
-
-got:character1680 a got:Character ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:culture "Northmen"^^xsd:string ;
-    got:dateOfDeath 299 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house95 ;
-    got:isAlive 0 ;
-    got:isNoble 1 ;
-    got:isPopular 1 ;
-    got:name "Rodrik Cassel"^^xsd:string ;
-    got:popularity "0.397993311"^^xsd:float ;
-    got:title "Ser"^^xsd:string .
-
-got:character1900 a got:Character ;
-    got:age 27 ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:culture "Ironmen"^^xsd:string ;
-    got:dateOfBirth 278 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house257 ;
-    got:heirOf got:character233 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 1 ;
-    got:name "Theon Greyjoy"^^xsd:string ;
-    got:popularity "1.0"^^xsd:float ;
-    got:title "green lands"^^xsd:string .
-
-got:character1971 a got:Character ;
-    got:age 32 ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:dateOfBirth 273 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house336 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 1 ;
-    got:name "Tyrion Lannister"^^xsd:string ;
-    got:popularity "1.0"^^xsd:float ;
-    got:spouseOf got:character1765,
-        got:character1974 ;
-    got:title "Hand of the King"^^xsd:string .
-
 got:character228 a got:Character ;
     got:gender "male"^^xsd:string ;
     got:heirOf got:character474 ;
@@ -28738,8 +28341,25 @@ got:character228 a got:Character ;
     got:popularity "0.501672241"^^xsd:float ;
     got:spouseOf got:character469 .
 
-got:character5 a got:Character ;
-    got:name " Brynden Tully"^^xsd:string .
+got:character233 a got:Character ;
+    got:attackerKingOf got:battle17,
+        got:battle18,
+        got:battle2,
+        got:battle21,
+        got:battle27,
+        got:battle4,
+        got:battle8 ;
+    got:defenderKingOf got:battle20,
+        got:battle22,
+        got:battle27,
+        got:battle7 ;
+    got:gender "male"^^xsd:string ;
+    got:isAlive 0 ;
+    got:isNoble 0 ;
+    got:isPopular 1 ;
+    got:name "Balon Greyjoy"^^xsd:string ;
+    got:popularity "0.739130435"^^xsd:float ;
+    got:spouseOf got:character105 .
 
 got:character511 a got:Character ;
     got:age 45 ;
@@ -28760,6 +28380,28 @@ got:character511 a got:Character ;
     got:spouseOf got:character1278 ;
     got:title "Ser"^^xsd:string .
 
+got:character593 a got:Character ;
+    got:age 38 ;
+    got:apearedIn got:book1,
+        got:book2,
+        got:book3,
+        got:book4,
+        got:book5 ;
+    got:culture "Rivermen"^^xsd:string ;
+    got:dateOfBirth 267 ;
+    got:defenderCommanderOf got:battle13,
+        got:battle6 ;
+    got:founderOf got:house604 ;
+    got:gender "male"^^xsd:string ;
+    got:hasHouse got:house603 ;
+    got:isAlive 1 ;
+    got:isNoble 1 ;
+    got:isPopular 1 ;
+    got:name "Edmure Tully"^^xsd:string ;
+    got:popularity "0.655518395"^^xsd:float ;
+    got:spouseOf got:character1724 ;
+    got:title "Ser"^^xsd:string .
+
 got:character634 a got:Character ;
     got:age 68 ;
     got:apearedIn got:book1,
@@ -28778,6 +28420,28 @@ got:character634 a got:Character ;
     got:popularity "0.230769231"^^xsd:float ;
     got:spouseOf got:character720 ;
     got:title "Riverrun"^^xsd:string .
+
+got:character653 a got:Character ;
+    got:attackerCommanderOf got:battle17,
+        got:battle21 ;
+    got:attackerKingOf got:battle17,
+        got:battle18,
+        got:battle2,
+        got:battle21,
+        got:battle27,
+        got:battle4,
+        got:battle8 ;
+    got:culture "Ironborn"^^xsd:string ;
+    got:defenderKingOf got:battle20,
+        got:battle22,
+        got:battle27,
+        got:battle7 ;
+    got:gender "male"^^xsd:string ;
+    got:isAlive 1 ;
+    got:isNoble 0 ;
+    got:isPopular 1 ;
+    got:name "Euron Greyjoy"^^xsd:string ;
+    got:popularity "0.739130435"^^xsd:float .
 
 got:character672 a got:Character ;
     got:founderOf got:house17,
@@ -28956,44 +28620,79 @@ got:character1224 a got:Character ;
     got:name "Maegor I Targaryen"^^xsd:string ;
     got:popularity "0.705685619"^^xsd:float .
 
-got:character1616 a got:Character ;
-    got:age 22 ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:culture "Stormlands"^^xsd:string ;
-    got:dateOfBirth 277 ;
-    got:dateOfDeath 299 ;
+got:character1656 a got:Character ;
+    got:attackerCommanderOf got:battle11,
+        got:battle12,
+        got:battle19,
+        got:battle5 ;
+    got:attackerKingOf got:battle11,
+        got:battle12,
+        got:battle15,
+        got:battle19,
+        got:battle25,
+        got:battle3,
+        got:battle30,
+        got:battle34,
+        got:battle5,
+        got:battle7 ;
+    got:defenderCommanderOf got:battle37 ;
+    got:defenderKingOf got:battle0,
+        got:battle13,
+        got:battle14,
+        got:battle16,
+        got:battle18,
+        got:battle2,
+        got:battle24,
+        got:battle28,
+        got:battle32,
+        got:battle33,
+        got:battle37,
+        got:battle4,
+        got:battle6,
+        got:battle8 ;
     got:gender "male"^^xsd:string ;
-    got:hasHouse got:house23 ;
     got:isAlive 0 ;
-    got:isNoble 1 ;
+    got:isNoble 0 ;
     got:isPopular 1 ;
-    got:name "Renly Baratheon"^^xsd:string ;
+    got:name "Robb Stark"^^xsd:string ;
     got:popularity "1.0"^^xsd:float ;
-    got:spouseOf got:character1249 ;
-    got:title "Lord Paramount of the Stormlands"^^xsd:string .
+    got:spouseOf got:character976 .
 
-got:character1982 a got:Character ;
-    got:age 58 ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:dateOfBirth 242 ;
-    got:dateOfDeath 300 ;
+got:character1928 a got:Character ;
+    got:attackerKingOf got:battle0,
+        got:battle13,
+        got:battle14,
+        got:battle16,
+        got:battle20,
+        got:battle23,
+        got:battle24,
+        got:battle28,
+        got:battle29,
+        got:battle31,
+        got:battle32,
+        got:battle33,
+        got:battle37,
+        got:battle6 ;
+    got:defenderKingOf got:battle11,
+        got:battle12,
+        got:battle15,
+        got:battle17,
+        got:battle19,
+        got:battle21,
+        got:battle25,
+        got:battle3,
+        got:battle30,
+        got:battle34,
+        got:battle36,
+        got:battle5,
+        got:battle9 ;
     got:gender "male"^^xsd:string ;
-    got:hasHouse got:house336 ;
-    got:isAlive 0 ;
-    got:isNoble 1 ;
+    got:heirOf got:character985 ;
+    got:isAlive 1 ;
+    got:isNoble 0 ;
     got:isPopular 1 ;
-    got:name "Tywin Lannister"^^xsd:string ;
-    got:popularity "1.0"^^xsd:float ;
-    got:spouseOf got:character981 ;
-    got:title "Casterly Rock"^^xsd:string .
+    got:name "Tommen Baratheon"^^xsd:string ;
+    got:popularity "1.0"^^xsd:float .
 
 got:character2026 a got:Character ;
     got:fatherOf got:character72 ;
@@ -29013,49 +28712,6 @@ got:character2027 a got:Character ;
     got:isPopular 1 ;
     got:name "Viserys II Targaryen"^^xsd:string ;
     got:popularity "0.605351171"^^xsd:float .
-
-got:character2041 a got:Character ;
-    got:age 97 ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:culture "Rivermen"^^xsd:string ;
-    got:dateOfBirth 208 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house216 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 1 ;
-    got:name "Walder Frey"^^xsd:string ;
-    got:popularity "0.89632107"^^xsd:float ;
-    got:spouseOf got:character1038,
-        got:character156,
-        got:character161,
-        got:character1769,
-        got:character177,
-        got:character298,
-        got:character457 ;
-    got:title "Lord of the Crossing"^^xsd:string .
-
-got:character211 a got:Character ;
-    got:age 30 ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book4,
-        got:book5 ;
-    got:culture "Ironborn"^^xsd:string ;
-    got:dateOfBirth 275 ;
-    got:gender "female"^^xsd:string ;
-    got:hasHouse got:house257 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 1 ;
-    got:name "Asha Greyjoy"^^xsd:string ;
-    got:popularity "0.7090301"^^xsd:float ;
-    got:spouseOf got:character643 ;
-    got:title "Black Wind"^^xsd:string .
 
 got:character366 a got:Character ;
     got:founderOf got:house270,
@@ -29151,24 +28807,6 @@ got:character928 a got:Character ;
     got:name "Jaehaerys II Targaryen"^^xsd:string ;
     got:popularity "0.494983278"^^xsd:float .
 
-got:character934 a got:Character ;
-    got:age 39 ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:culture "Westerlands"^^xsd:string ;
-    got:dateOfBirth 266 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house336 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 1 ;
-    got:name "Jaime Lannister"^^xsd:string ;
-    got:popularity "1.0"^^xsd:float ;
-    got:title "Ser"^^xsd:string .
-
 got:character96 a got:Character ;
     got:gender "male"^^xsd:string ;
     got:heirOf got:character928 ;
@@ -29178,6 +28816,41 @@ got:character96 a got:Character ;
     got:name "Aerys II Targaryen"^^xsd:string ;
     got:popularity "1.0"^^xsd:float ;
     got:spouseOf got:character1627 .
+
+got:character985 a got:Character ;
+    got:attackerKingOf got:battle0,
+        got:battle13,
+        got:battle14,
+        got:battle16,
+        got:battle20,
+        got:battle23,
+        got:battle24,
+        got:battle28,
+        got:battle29,
+        got:battle31,
+        got:battle32,
+        got:battle33,
+        got:battle37,
+        got:battle6 ;
+    got:defenderKingOf got:battle11,
+        got:battle12,
+        got:battle15,
+        got:battle17,
+        got:battle19,
+        got:battle21,
+        got:battle25,
+        got:battle3,
+        got:battle30,
+        got:battle34,
+        got:battle36,
+        got:battle5,
+        got:battle9 ;
+    got:gender "male"^^xsd:string ;
+    got:isAlive 0 ;
+    got:isNoble 0 ;
+    got:isPopular 1 ;
+    got:name "Joffrey Baratheon"^^xsd:string ;
+    got:popularity "1.0"^^xsd:float .
 
 got:house127 a got:House ;
     got:name "Corbray"^^xsd:string .
@@ -29287,6 +28960,28 @@ got:region27 a got:Region ;
 got:region8 a got:Region ;
     got:name "Iron Islands (Shield Islands)"^^xsd:string .
 
+got:character1834 a got:Character ;
+    got:attackerCommanderOf got:battle22,
+        got:battle35,
+        got:battle36,
+        got:battle9 ;
+    got:attackerKingOf got:battle1,
+        got:battle22,
+        got:battle35,
+        got:battle36,
+        got:battle9 ;
+    got:defenderCommanderOf got:battle1 ;
+    got:defenderKingOf got:battle29,
+        got:battle31 ;
+    got:founderOf got:house24 ;
+    got:gender "male"^^xsd:string ;
+    got:isAlive 1 ;
+    got:isNoble 0 ;
+    got:isPopular 1 ;
+    got:name "Stannis Baratheon"^^xsd:string ;
+    got:popularity "1.0"^^xsd:float ;
+    got:spouseOf got:character1780 .
+
 got:character365 a got:Character ;
     got:founderOf got:house234,
         got:house235,
@@ -29294,44 +28989,6 @@ got:character365 a got:Character ;
         got:house237,
         got:house238 ;
     got:name "Cadet of Goodbrother"^^xsd:string .
-
-got:character593 a got:Character ;
-    got:age 38 ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:culture "Rivermen"^^xsd:string ;
-    got:dateOfBirth 267 ;
-    got:founderOf got:house604 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house603 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 1 ;
-    got:name "Edmure Tully"^^xsd:string ;
-    got:popularity "0.655518395"^^xsd:float ;
-    got:spouseOf got:character1724 ;
-    got:title "Ser"^^xsd:string .
-
-got:character766 a got:Character ;
-    got:age 35 ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:dateOfBirth 265 ;
-    got:dateOfDeath 300 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house113 ;
-    got:isAlive 0 ;
-    got:isNoble 1 ;
-    got:isPopular 1 ;
-    got:name "Gregor Clegane"^^xsd:string ;
-    got:popularity "0.836120401"^^xsd:float ;
-    got:title "Ser"^^xsd:string .
 
 got:house106 a got:House ;
     got:name "Chataya's brothel"^^xsd:string .
@@ -29365,6 +29022,11 @@ got:house211 a got:House ;
     got:name "Fossoway of Cider Hall"^^xsd:string ;
     got:sigil "https://awoiaf.westeros.org/index.php/File:House_Fossoway.svg"^^xsd:string .
 
+got:house228 a got:House ;
+    got:attackerHouseIn got:battle22,
+        got:battle36 ;
+    got:name "Glover"^^xsd:string .
+
 got:house25 a got:House ;
     got:blazon "Per pale Baratheon and Lannister"^^xsd:string ;
     got:hasFounder got:character1665 ;
@@ -29390,6 +29052,10 @@ got:house421 a got:House ;
 got:house427 a got:House ;
     got:name "Oakheart"^^xsd:string .
 
+got:house45 a got:House ;
+    got:defenderHouseIn got:battle32 ;
+    got:name "Blackwood"^^xsd:string .
+
 got:house513 a got:House ;
     got:name "Second Sons"^^xsd:string .
 
@@ -29412,25 +29078,52 @@ got:region25 a got:Region ;
 got:region4 a got:Region ;
     got:name "Crownlands (Dragonstone)"^^xsd:string .
 
-got:character1716 a got:Character ;
-    got:age 45 ;
-    got:apearedIn got:book1,
-        got:book2,
-        got:book3,
-        got:book4,
-        got:book5 ;
-    got:culture "Northmen"^^xsd:string ;
-    got:dateOfBirth 260 ;
-    got:gender "male"^^xsd:string ;
-    got:hasHouse got:house53 ;
-    got:isAlive 1 ;
-    got:isNoble 1 ;
-    got:isPopular 1 ;
-    got:name "Roose Bolton"^^xsd:string ;
-    got:popularity "0.97993311"^^xsd:float ;
-    got:spouseOf got:character2035,
-        got:character294 ;
-    got:title "Dreadfort"^^xsd:string .
+got:battle18 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:attackerSize 264 ;
+    got:battleType "ambush"^^xsd:string ;
+    got:location "Stony Shore"^^xsd:string ;
+    got:name "Battle of the Stony Shore"^^xsd:string ;
+    got:occurredIn got:region10 ;
+    got:year 299 .
+
+got:battle2 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:attackerSize 1000 ;
+    got:battleType "siege"^^xsd:string ;
+    got:location "Deepwood Motte"^^xsd:string ;
+    got:name "Battle of Deepwood Motte"^^xsd:string ;
+    got:occurredIn got:region10 ;
+    got:year 299 .
+
+got:battle23 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:battleType "pitched battle"^^xsd:string ;
+    got:location "Harrenhal"^^xsd:string ;
+    got:name "Retaking of Harrenhal"^^xsd:string ;
+    got:occurredIn got:region20 ;
+    got:year 299 .
+
+got:battle30 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:battleType "siege"^^xsd:string ;
+    got:location "Darry"^^xsd:string ;
+    got:name "Siege of Darry"^^xsd:string ;
+    got:occurredIn got:region20 ;
+    got:year 299 .
+
+got:battle4 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:battleType "pitched battle"^^xsd:string ;
+    got:location "Moat Cailin"^^xsd:string ;
+    got:name "Battle of Moat Cailin"^^xsd:string ;
+    got:occurredIn got:region10 ;
+    got:year 299 .
+
+got:house153 a got:House ;
+    got:attackerHouseIn got:battle30 ;
+    got:defenderHouseIn got:battle24 ;
+    got:name "Darry"^^xsd:string .
 
 got:house179 a got:House ;
     got:name "Estermont"^^xsd:string .
@@ -29444,15 +29137,16 @@ got:house263 a got:House ;
 got:house27 a got:House ;
     got:name "Beesbury"^^xsd:string .
 
+got:house371 a got:House ;
+    got:defenderHouseIn got:battle34 ;
+    got:name "Mallister"^^xsd:string .
+
 got:house38 a got:House ;
     got:blazon "A black three-headed dragon, breathing black fire on red"^^xsd:string ;
     got:hasFounder got:character464 ;
     got:locatedIn got:region1 ;
     got:name "Blackfyre"^^xsd:string ;
     got:sigil "https://awoiaf.westeros.org/index.php/File:House_Blackfyre.svg"^^xsd:string .
-
-got:house45 a got:House ;
-    got:name "Blackwood"^^xsd:string .
 
 got:house471 a got:House ;
     got:name "Redfort"^^xsd:string .
@@ -29482,6 +29176,56 @@ got:house641 a got:House ;
 got:house72 a got:House ;
     got:name "Brotherhood Without Banners"^^xsd:string .
 
+got:battle0 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:battleType "ambush"^^xsd:string ;
+    got:defenderSize 120 ;
+    got:location "Mummer's Ford"^^xsd:string ;
+    got:name "Battle at the Mummer's Ford"^^xsd:string ;
+    got:occurredIn got:region20 ;
+    got:year 298 .
+
+got:battle20 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:battleType "siege"^^xsd:string ;
+    got:location "Moat Cailin"^^xsd:string ;
+    got:name "Fall of Moat Cailin"^^xsd:string ;
+    got:occurredIn got:region10 ;
+    got:year 300 .
+
+got:battle24 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:battleType "pitched battle"^^xsd:string ;
+    got:location "Darry"^^xsd:string ;
+    got:name "Sack of Darry"^^xsd:string ;
+    got:occurredIn got:region20 ;
+    got:year 298 .
+
+got:battle27 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:battleType "siege"^^xsd:string ;
+    got:location "Torrhen's Square"^^xsd:string ;
+    got:name "Sack of Torrhen's Square"^^xsd:string ;
+    got:occurredIn got:region10 ;
+    got:year 299 .
+
+got:battle34 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:battleType "siege"^^xsd:string ;
+    got:location "Seagard"^^xsd:string ;
+    got:name "Siege of Seagard"^^xsd:string ;
+    got:occurredIn got:region20 ;
+    got:year 299 .
+
+got:battle8 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:attackerSize 20 ;
+    got:battleType "ambush"^^xsd:string ;
+    got:location "Winterfell"^^xsd:string ;
+    got:name "Battle of Winterfell"^^xsd:string ;
+    got:occurredIn got:region10 ;
+    got:year 299 .
+
 got:house0 a got:House ;
     got:name "Alchemists' Guild"^^xsd:string .
 
@@ -29494,9 +29238,6 @@ got:house155 a got:House ;
     got:locatedIn got:region6 ;
     got:name "Dayne"^^xsd:string ;
     got:sigil "https://awoiaf.westeros.org/index.php/File:House_Dayne.svg"^^xsd:string .
-
-got:house228 a got:House ;
-    got:name "Glover"^^xsd:string .
 
 got:house233 a got:House ;
     got:blazon "A gold-banded black warhorn on red"^^xsd:string ;
@@ -29514,9 +29255,6 @@ got:house269 a got:House ;
 
 got:house357 a got:House ;
     got:name "Loraq"^^xsd:string .
-
-got:house371 a got:House ;
-    got:name "Mallister"^^xsd:string .
 
 got:house374 a got:House ;
     got:name "Manderly"^^xsd:string .
@@ -29539,11 +29277,81 @@ got:region13 a got:Region ;
 got:region3 a got:Region ;
     got:name "Crownlands (Crackclaw Point)"^^xsd:string .
 
-got:house153 a got:House ;
-    got:name "Darry"^^xsd:string .
+got:battle14 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:attackerSize 15000 ;
+    got:battleType "pitched battle"^^xsd:string ;
+    got:defenderSize 4000 ;
+    got:location "Golden Tooth"^^xsd:string ;
+    got:name "Battle of the Golden Tooth"^^xsd:string ;
+    got:occurredIn got:region28 ;
+    got:year 298 .
+
+got:battle16 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:battleType "pitched battle"^^xsd:string ;
+    got:defenderSize 6000 ;
+    got:location "Ruby Ford"^^xsd:string ;
+    got:name "Battle of the Ruby Ford"^^xsd:string ;
+    got:occurredIn got:region20 ;
+    got:year 299 .
+
+got:battle17 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:battleType "pitched battle"^^xsd:string ;
+    got:location "Shield Islands"^^xsd:string ;
+    got:name "Battle of the Shield Islands"^^xsd:string ;
+    got:occurredIn got:region17 ;
+    got:year 300 .
+
+got:battle21 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:battleType "razing"^^xsd:string ;
+    got:location "Ryamsport, Vinetown, Starfish Harbor"^^xsd:string ;
+    got:name "Invasion of Ryamsport, Vinetown, and Starfish Harbor"^^xsd:string ;
+    got:occurredIn got:region17 ;
+    got:year 300 .
+
+got:battle29 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:battleType "siege"^^xsd:string ;
+    got:defenderSize 200 ;
+    got:location "Storm's End"^^xsd:string ;
+    got:name "Second Seige of Storm's End"^^xsd:string ;
+    got:occurredIn got:region23 ;
+    got:year 300 .
+
+got:battle31 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:attackerSize 2000 ;
+    got:battleType "siege"^^xsd:string ;
+    got:location "Dragonstone"^^xsd:string ;
+    got:name "Siege of Dragonstone"^^xsd:string ;
+    got:occurredIn got:region23 ;
+    got:year 300 .
+
+got:battle7 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:attackerSize 244 ;
+    got:battleType "pitched battle"^^xsd:string ;
+    got:defenderSize 900 ;
+    got:location "Torrhen's Square"^^xsd:string ;
+    got:name "Battle of Torrhen's Square"^^xsd:string ;
+    got:occurredIn got:region10 ;
+    got:year 299 .
 
 got:house165 a got:House ;
     got:name "Drumm"^^xsd:string .
+
+got:house317 a got:House ;
+    got:attackerHouseIn got:battle22,
+        got:battle36 ;
+    got:name "Karstark"^^xsd:string .
+
+got:house404 a got:House ;
+    got:attackerHouseIn got:battle22,
+        got:battle36 ;
+    got:name "Mormont"^^xsd:string .
 
 got:house493 a got:House ;
     got:blazon "A black portcullis over a white crescent moon on purple bordered with runes on bronze"^^xsd:string ;
@@ -29567,6 +29375,63 @@ got:house668 a got:House ;
 got:region12 a got:Region ;
     got:name "North (Crannogmen)"^^xsd:string .
 
+got:battle12 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:attackerSize 6000 ;
+    got:battleType "ambush"^^xsd:string ;
+    got:location "Crag"^^xsd:string ;
+    got:name "Battle of the Crag"^^xsd:string ;
+    got:occurredIn got:region28 ;
+    got:year 299 .
+
+got:battle19 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:attackerSize 1875 ;
+    got:battleType "ambush"^^xsd:string ;
+    got:defenderSize 6000 ;
+    got:location "Whispering Wood"^^xsd:string ;
+    got:name "Battle of the Whispering Wood"^^xsd:string ;
+    got:occurredIn got:region20 ;
+    got:year 298 .
+
+got:battle25 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:attackerSize 100 ;
+    got:battleType "ambush"^^xsd:string ;
+    got:defenderSize 100 ;
+    got:location "Harrenhal"^^xsd:string ;
+    got:name "Sack of Harrenhal"^^xsd:string ;
+    got:occurredIn got:region20 ;
+    got:year 299 .
+
+got:battle3 a got:Battle ;
+    got:attackerOutcome "loss"^^xsd:string ;
+    got:attackerSize 3000 ;
+    got:battleType "pitched battle"^^xsd:string ;
+    got:location "Duskendale"^^xsd:string ;
+    got:name "Battle of Duskendale"^^xsd:string ;
+    got:occurredIn got:region1 ;
+    got:year 299 .
+
+got:battle32 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:attackerSize 1500 ;
+    got:battleType "siege"^^xsd:string ;
+    got:location "Raventree"^^xsd:string ;
+    got:name "Siege of Raventree"^^xsd:string ;
+    got:occurredIn got:region20 ;
+    got:year 300 .
+
+got:battle6 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:attackerSize 15000 ;
+    got:battleType "pitched battle"^^xsd:string ;
+    got:defenderSize 10000 ;
+    got:location "Riverrun"^^xsd:string ;
+    got:name "Battle of Riverrun"^^xsd:string ;
+    got:occurredIn got:region20 ;
+    got:year 298 .
+
 got:house113 a got:House ;
     got:name "Clegane"^^xsd:string .
 
@@ -29585,6 +29450,25 @@ got:house637 a got:House ;
 got:house649 a got:House ;
     got:name "Westerling"^^xsd:string .
 
+got:battle33 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:attackerSize 3000 ;
+    got:battleType "siege"^^xsd:string ;
+    got:location "Riverrun"^^xsd:string ;
+    got:name "Siege of Riverrun"^^xsd:string ;
+    got:occurredIn got:region20 ;
+    got:year 300 .
+
+got:battle37 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:attackerSize 3500 ;
+    got:battleType "ambush"^^xsd:string ;
+    got:defenderSize 3500 ;
+    got:location "The Twins"^^xsd:string ;
+    got:name "The Red Wedding"^^xsd:string ;
+    got:occurredIn got:region20 ;
+    got:year 299 .
+
 got:house136 a got:House ;
     got:name "Crakehall"^^xsd:string .
 
@@ -29595,18 +29479,70 @@ got:house24 a got:House ;
     got:name "Baratheon of Dragonstone"^^xsd:string ;
     got:sigil "https://awoiaf.westeros.org/index.php/File:House_Baratheon_(Dragonstone).svg"^^xsd:string .
 
-got:house317 a got:House ;
-    got:name "Karstark"^^xsd:string .
-
-got:house404 a got:House ;
-    got:name "Mormont"^^xsd:string .
-
 got:house492 a got:House ;
     got:blazon "Black iron studs on bronze, bordered with <a href=\"/index.php/Runes\" title=\"Runes\">runes</a>"^^xsd:string ;
     got:hasFounder got:character340 ;
     got:locatedIn got:region26 ;
     got:name "Royce"^^xsd:string ;
     got:sigil "https://awoiaf.westeros.org/index.php/File:House_Royce.svg"^^xsd:string .
+
+got:battle11 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:attackerSize 6000 ;
+    got:battleType "ambush"^^xsd:string ;
+    got:defenderSize 12625 ;
+    got:location "Riverrun"^^xsd:string ;
+    got:name "Battle of the Camps"^^xsd:string ;
+    got:occurredIn got:region20 ;
+    got:year 298 .
+
+got:battle22 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:attackerSize 4500 ;
+    got:battleType "pitched battle"^^xsd:string ;
+    got:defenderSize 200 ;
+    got:location "Deepwood Motte"^^xsd:string ;
+    got:name "Retaking of Deepwood Motte"^^xsd:string ;
+    got:occurredIn got:region10 ;
+    got:year 300 .
+
+got:battle28 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:attackerSize 618 ;
+    got:battleType "ambush"^^xsd:string ;
+    got:defenderSize 2000 ;
+    got:location "Winterfell"^^xsd:string ;
+    got:name "Sack of Winterfell"^^xsd:string ;
+    got:occurredIn got:region10 ;
+    got:year 299 .
+
+got:battle35 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:attackerSize 5000 ;
+    got:battleType "siege"^^xsd:string ;
+    got:defenderSize 20000 ;
+    got:location "Storm's End"^^xsd:string ;
+    got:name "Siege of Storm's End"^^xsd:string ;
+    got:occurredIn got:region23 ;
+    got:year 299 .
+
+got:battle36 a got:Battle ;
+    got:attackerSize 5000 ;
+    got:defenderSize 8000 ;
+    got:location "Winterfell"^^xsd:string ;
+    got:name "Siege of Winterfell"^^xsd:string ;
+    got:occurredIn got:region10 ;
+    got:year 300 .
+
+got:battle5 a got:Battle ;
+    got:attackerOutcome "win"^^xsd:string ;
+    got:attackerSize 6000 ;
+    got:battleType "ambush"^^xsd:string ;
+    got:defenderSize 10000 ;
+    got:location "Oxcross"^^xsd:string ;
+    got:name "Battle of Oxcross"^^xsd:string ;
+    got:occurredIn got:region28 ;
+    got:year 299 .
 
 got:house623 a got:House ;
     got:name "Velaryon"^^xsd:string .
@@ -29617,54 +29553,88 @@ got:house651 a got:House ;
 got:house74 a got:House ;
     got:name "Brotherhood without banners"^^xsd:string .
 
+got:house603 a got:House ;
+    got:attackerHouseIn got:battle11,
+        got:battle19,
+        got:battle5 ;
+    got:defenderHouseIn got:battle13,
+        got:battle14,
+        got:battle33,
+        got:battle6 ;
+    got:name "Tully"^^xsd:string .
+
+got:house63 a got:House ;
+    got:attackerHouseIn got:battle26 ;
+    got:defenderHouseIn got:battle10,
+        got:battle23 ;
+    got:name "Brave Companions"^^xsd:string .
+
 got:house203 a got:House ;
     got:name "Florent"^^xsd:string .
+
+got:house23 a got:House ;
+    got:attackerHouseIn got:battle22,
+        got:battle29,
+        got:battle31,
+        got:battle35,
+        got:battle36,
+        got:battle9 ;
+    got:defenderHouseIn got:battle0,
+        got:battle1,
+        got:battle29,
+        got:battle31,
+        got:battle35 ;
+    got:name "Baratheon"^^xsd:string .
+
+got:house53 a got:House ;
+    got:attackerHouseIn got:battle20,
+        got:battle28,
+        got:battle37 ;
+    got:defenderHouseIn got:battle36 ;
+    got:name "Bolton"^^xsd:string .
 
 got:house58 a got:House ;
     got:name "Botley"^^xsd:string .
 
-got:character233 a got:Character ;
-    got:gender "male"^^xsd:string ;
-    got:isAlive 0 ;
-    got:isNoble 0 ;
-    got:isPopular 1 ;
-    got:name "Balon Greyjoy"^^xsd:string ;
-    got:popularity "0.739130435"^^xsd:float ;
-    got:spouseOf got:character105 .
+got:battle13 a got:Battle ;
+    got:attackerOutcome "loss"^^xsd:string ;
+    got:attackerSize 20000 ;
+    got:battleType "pitched battle"^^xsd:string ;
+    got:defenderSize 10000 ;
+    got:location "Red Fork"^^xsd:string ;
+    got:name "Battle of the Fords"^^xsd:string ;
+    got:occurredIn got:region20 ;
+    got:year 299 .
+
+got:battle15 a got:Battle ;
+    got:attackerOutcome "loss"^^xsd:string ;
+    got:attackerSize 18000 ;
+    got:battleType "pitched battle"^^xsd:string ;
+    got:defenderSize 20000 ;
+    got:location "Green Fork"^^xsd:string ;
+    got:name "Battle of the Green Fork"^^xsd:string ;
+    got:occurredIn got:region20 ;
+    got:year 298 .
 
 got:house60 a got:House ;
+    got:attackerHouseIn got:battle32 ;
     got:name "Bracken"^^xsd:string .
 
-got:house63 a got:House ;
-    got:name "Brave Companions"^^xsd:string .
-
-got:character653 a got:Character ;
-    got:culture "Ironborn"^^xsd:string ;
-    got:gender "male"^^xsd:string ;
-    got:isAlive 1 ;
-    got:isNoble 0 ;
-    got:isPopular 1 ;
-    got:name "Euron Greyjoy"^^xsd:string ;
-    got:popularity "0.739130435"^^xsd:float .
+got:battle1 a got:Battle ;
+    got:attackerOutcome "loss"^^xsd:string ;
+    got:attackerSize 100000 ;
+    got:battleType "siege"^^xsd:string ;
+    got:defenderSize 1240 ;
+    got:location "Castle Black"^^xsd:string ;
+    got:name "Battle of Castle Black"^^xsd:string ;
+    got:occurredIn got:region0 ;
+    got:year 300 .
 
 got:house289 a got:House ;
     got:name "Hightower"^^xsd:string .
 
-got:character1834 a got:Character ;
-    got:founderOf got:house24 ;
-    got:gender "male"^^xsd:string ;
-    got:isAlive 1 ;
-    got:isNoble 0 ;
-    got:isPopular 1 ;
-    got:name "Stannis Baratheon"^^xsd:string ;
-    got:popularity "1.0"^^xsd:float ;
-    got:spouseOf got:character1780 .
-
 got:house184 a got:House ;
     got:name "Faith of the Seven"^^xsd:string .
-
-got:house53 a got:House ;
-    got:name "Bolton"^^xsd:string .
 
 got:house9 a got:House ;
     got:blazon "A sky-blue falcon soaring against a white moon, on sky-blue"^^xsd:string ;
@@ -29673,8 +29643,15 @@ got:house9 a got:House ;
     got:name "Arryn"^^xsd:string ;
     got:sigil "https://awoiaf.westeros.org/index.php/File:House_Arryn.svg"^^xsd:string .
 
-got:house603 a got:House ;
-    got:name "Tully"^^xsd:string .
+got:battle9 a got:Battle ;
+    got:attackerOutcome "loss"^^xsd:string ;
+    got:attackerSize 21000 ;
+    got:battleType "pitched battle"^^xsd:string ;
+    got:defenderSize 7250 ;
+    got:location "King's Landing"^^xsd:string ;
+    got:name "Battle of the Blackwater"^^xsd:string ;
+    got:occurredIn got:region1 ;
+    got:year 299 .
 
 got:character769 a got:Character ;
     got:culture "Ironborn"^^xsd:string ;
@@ -29712,40 +29689,11 @@ got:house432 a got:House ;
     got:name "Osgrey"^^xsd:string ;
     got:sigil "https://awoiaf.westeros.org/index.php/File:House_Osgrey.svg"^^xsd:string .
 
-got:house23 a got:House ;
-    got:name "Baratheon"^^xsd:string .
-
 got:house383 a got:House ;
     got:name "Martell"^^xsd:string .
 
 got:region6 a got:Region ;
     got:name "Dorne"^^xsd:string .
-
-got:character1928 a got:Character ;
-    got:gender "male"^^xsd:string ;
-    got:heirOf got:character985 ;
-    got:isAlive 1 ;
-    got:isNoble 0 ;
-    got:isPopular 1 ;
-    got:name "Tommen Baratheon"^^xsd:string ;
-    got:popularity "1.0"^^xsd:float .
-
-got:character985 a got:Character ;
-    got:gender "male"^^xsd:string ;
-    got:isAlive 0 ;
-    got:isNoble 0 ;
-    got:isPopular 1 ;
-    got:name "Joffrey Baratheon"^^xsd:string ;
-    got:popularity "1.0"^^xsd:float .
-
-got:character1656 a got:Character ;
-    got:gender "male"^^xsd:string ;
-    got:isAlive 0 ;
-    got:isNoble 0 ;
-    got:isPopular 1 ;
-    got:name "Robb Stark"^^xsd:string ;
-    got:popularity "1.0"^^xsd:float ;
-    got:spouseOf got:character976 .
 
 got:region26 a got:Region ;
     got:name "Vale of Arryn"^^xsd:string .
@@ -29753,17 +29701,55 @@ got:region26 a got:Region ;
 got:region7 a got:Region ;
     got:name "Iron Islands"^^xsd:string .
 
+got:house606 a got:House ;
+    got:defenderHouseIn got:battle17,
+        got:battle21 ;
+    got:name "Tyrell"^^xsd:string .
+
 got:region23 a got:Region ;
     got:name "Stormlands"^^xsd:string .
-
-got:house606 a got:House ;
-    got:name "Tyrell"^^xsd:string .
 
 got:region1 a got:Region ;
     got:name "Crownlands"^^xsd:string .
 
 got:house257 a got:House ;
+    got:attackerHouseIn got:battle17,
+        got:battle18,
+        got:battle2,
+        got:battle21,
+        got:battle27,
+        got:battle28,
+        got:battle4,
+        got:battle8 ;
+    got:defenderHouseIn got:battle20,
+        got:battle22,
+        got:battle7 ;
     got:name "Greyjoy"^^xsd:string .
+
+got:house336 a got:House ;
+    got:attackerHouseIn got:battle0,
+        got:battle13,
+        got:battle14,
+        got:battle16,
+        got:battle23,
+        got:battle24,
+        got:battle32,
+        got:battle33,
+        got:battle6 ;
+    got:blazon "A roaring lion, gold on crimson"^^xsd:string ;
+    got:defenderHouseIn got:battle11,
+        got:battle12,
+        got:battle15,
+        got:battle19,
+        got:battle25,
+        got:battle3,
+        got:battle30,
+        got:battle5,
+        got:battle9 ;
+    got:hasFounder got:character1094 ;
+    got:locatedIn got:region28 ;
+    got:name "Lannister"^^xsd:string ;
+    got:sigil "https://awoiaf.westeros.org/index.php/File:House_Lannister.svg"^^xsd:string .
 
 got:region10 a got:Region ;
     got:name "North"^^xsd:string .
@@ -29774,13 +29760,6 @@ got:region28 a got:Region ;
 got:house574 a got:House ;
     got:name "Targaryen"^^xsd:string .
 
-got:house336 a got:House ;
-    got:blazon "A roaring lion, gold on crimson"^^xsd:string ;
-    got:hasFounder got:character1094 ;
-    got:locatedIn got:region28 ;
-    got:name "Lannister"^^xsd:string ;
-    got:sigil "https://awoiaf.westeros.org/index.php/File:House_Lannister.svg"^^xsd:string .
-
 got:region20 a got:Region ;
     got:name "Riverlands"^^xsd:string .
 
@@ -29788,12 +29767,33 @@ got:region17 a got:Region ;
     got:name "Reach"^^xsd:string .
 
 got:house542 a got:House ;
+    got:attackerHouseIn got:battle11,
+        got:battle12,
+        got:battle15,
+        got:battle19,
+        got:battle25,
+        got:battle3,
+        got:battle5,
+        got:battle7 ;
+    got:defenderHouseIn got:battle16,
+        got:battle18,
+        got:battle2,
+        got:battle27,
+        got:battle28,
+        got:battle37,
+        got:battle4,
+        got:battle8 ;
     got:name "Stark"^^xsd:string .
 
 got:house216 a got:House ;
+    got:attackerHouseIn got:battle33,
+        got:battle34,
+        got:battle37 ;
+    got:defenderHouseIn got:battle36 ;
     got:name "Frey"^^xsd:string .
 
 got:house420 a got:House ;
+    got:defenderHouseIn got:battle1 ;
     got:name "Night's Watch"^^xsd:string .
 
 got:book1 a got:Book ;
