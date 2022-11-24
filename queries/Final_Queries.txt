@@ -1,0 +1,357 @@
+# Query Number 1 
+
+# 5 characters mostly involved in battles as attacker king
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX got: <http://www.dei.unipd.it/database2/gotOntology#>
+
+select ?characterName (COUNT (?battle) as ?NumberOfAttackes) where {
+    ?character got:attackerKingOf ?battle ;
+               got:name ?characterName.
+    ?battle got:name ?battleName .
+}
+GROUP BY ?characterName
+ORDER BY DESC (?NumberOfAttackes )
+LIMIT 5
+
+
+# ************************************************************* 
+
+
+# Query Number 2 
+
+# Average number of army that attacker Houses used to invade 
+PREFIX got: <http://www.dei.unipd.it/database2/gotOntology#>
+
+select ?houseName (AVG (?army) as ?Average) 
+    where { 
+  ?house got:attackerHouseIn ?battle ;
+        got:name ?houseName .
+    ?battle got:attackerSize ?army .
+} GROUP BY ?houseName
+limit 100 
+
+# ************************************************************* 
+
+
+# Query Number 3
+
+# Minimum number of army that won a pitched battle
+PREFIX got: <http://www.dei.unipd.it/database2/gotOntology#>
+select (MIN (?army) as ?Min) where { 
+  
+    ?battle got:attackerSize ?army ;
+            got:battleType ?type ;
+            got:attackerOutcome "win".
+    FILTER (REGEX (?type , "[Pp]itched.*"))
+} 
+
+# ************************************************************* 
+
+
+# Query Number 4
+
+# The biggest invader army that ever lost a battle  
+PREFIX got: <http://www.dei.unipd.it/database2/gotOntology#>
+select ?battleName (MAX (?army) as ?number) where { 
+
+    ?battle got:attackerSize ?army ;
+            got:attackerOutcome "loss" ;
+            got:name ?battleName .
+    
+} GROUP BY (?battleName)
+ORDER BY DESC(?number)
+LIMIT 1
+
+# ************************************************************* 
+
+
+# Query Number 5
+
+#20 most popular person who were not involved in any battle 
+
+#Method 1 :
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX got: <http://www.dei.unipd.it/database2/gotOntology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?name ?popularity where {
+    ?character got:name ?name ;
+               got:popularity ?popularity .
+    FILTER NOT EXISTS {
+        ?character ?p ?battle .
+        ?battle rdf:type|rdfs:type got:Battle .
+    }
+}
+ORDER BY DESC (?popularity)
+LIMIT 20
+
+
+#Method 2 :
+PREFIX got: <http://www.dei.unipd.it/database2/gotOntology#>
+select distinct ?name  ?pop where
+{ 
+	?char got:popularity ?pop;
+       	got:name ?name .
+    
+        
+MINUS 
+{ 
+	?char got:attackerCommander|got:attackerKingOf |got:defenderCommander |got:defenderKingOf  ?n ;
+    	got:name ?name .
+} 
+} order by desc(?pop)
+limit 20
+
+# ************************************************************* 
+
+
+# Query Number 6
+
+# Is there any house with "black" in its blazon?
+PREFIX got: <http://www.dei.unipd.it/database2/gotOntology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+ASK WHERE{
+    ?house got:blazon ?blazon .
+    FILTER EXISTS {
+        FILTER (REGEX (?blazon , "black"))
+    }
+}
+
+# ************************************************************* 
+
+
+# Query Number 7 
+
+# All the DISTINCT properties of the resources of type “got:battle"
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX got: <http://www.dei.unipd.it/database2/gotOntology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?prop where {
+    ?character rdf:type|rdfs:type got:Battle .
+    ?character ?prop ?o .
+}
+
+
+# ************************************************************* 
+
+
+# Query Number 8 
+
+# 5 characters mostly won in battles as attacker king
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX got: <http://www.dei.unipd.it/database2/gotOntology#>
+
+select ?characterName (COUNT (?battle) as ?Outcome) where {
+    ?character got:attackerKingOf ?battle ;
+               got:name ?characterName.
+    ?battle got:name ?battleName ;
+            got:attackerOutcome "win"
+    
+}
+GROUP BY (?characterName)
+ORDER BY DESC (?Outcome )
+LIMIT 5
+
+
+
+# ************************************************************* 
+
+# Query Number 9 
+
+
+#region names that had the highest number of win and loss battles 
+PREFIX got: <http://www.dei.unipd.it/database2/gotOntology#>
+
+SELECT * WHERE
+{ 
+{
+    SELECT  ?regname ( count (?name) as ?cs)  ?out WHERE 
+    {
+       ?bat got:attackerOutcome "win";
+            got:name ?name ;
+            got:occurredIn ?reg;
+    		got:attackerOutcome ?out.
+    	?reg got:name ?regname .
+    }groupby  ?regname ?out
+        orderby desc(?cs)
+limit 1
+}
+UNION
+{
+    SELECT  ?regname ( count (?name) as ?cs)  ?out WHERE 
+    {
+        ?bat got:attackerOutcome "loss";
+            got:name ?name ;
+            got:occurredIn ?reg;
+    		got:attackerOutcome ?out.
+    	?reg got:name ?regname .
+    }groupby  ?regname ?out
+        orderby desc(?cs)
+limit 1
+        
+}
+}
+
+# ************************************************************* 
+
+# Query Number 10 
+
+#all the battels which attecker lost despite having more soldirs
+PREFIX got: <http://www.dei.unipd.it/database2/gotOntology#>
+select ?name ?atsize ?defsize where {
+	?battle got:attackerSize ?atsize;
+         	got:defenderSize ?defsize;
+          	got:attackerOutcome "loss";
+           got:name ?name .
+
+} groupby ?name ?atsize ?defsize
+having ( ?atsize >?defsize)
+
+
+# ************************************************************* 
+
+# Query Number 11
+
+#10 most popular  characters who appeard in all books and are not nobel
+PREFIX got: <http://www.dei.unipd.it/database2/gotOntology#>
+select ?name  ?pop where {
+	?char got:popularity ?pop;
+       	got:name ?name ;
+ 		got:apearedIn got:book1 ,got:book2, got:book3,got:book4 ,got:book5 ;
+            got:isNoble 0 .
+
+} order by desc(?pop)
+limit 10
+
+# ************************************************************* 
+
+# Query Number 12
+
+#Married Members of House Targaryen whose spouse is alive and nobel, with spouse name
+  PREFIX got: <http://www.dei.unipd.it/database2/gotOntology#>
+  select ?charName ?spName  where {
+  	?char got:hasHouse ?house;
+         got:name ?charName ;
+         got:spouseOf ?sp .
+      ?sp got:name ?spName ;
+          got:isNoble 1 ;
+      	got:isAlive 1 .
+      ?house got:name "Targaryen".
+  } limit 100
+
+# ************************************************************* 
+
+# Query Number 13
+
+#3 most popular nobels of house Frey
+  PREFIX got: <http://www.dei.unipd.it/database2/gotOntology#>
+  select ?name  ?pop where {
+  	?char got:isNoble 1  ;
+         	got:popularity ?pop;
+         	got:name ?name ;
+          got:hasHouse ?house .
+      ?house got:name ?houseName .
+
+
+      filter(Regex(?houseName, "Frey"))
+
+  } order by desc(?pop)
+  limit 5
+
+# ************************************************************* 
+
+# Query Number 14
+
+#name of the Mothers with 2 or more childs
+PREFIX got: <http://www.dei.unipd.it/database2/gotOntology#>
+select ?motherName where {
+	?char got:motherOf ?child ;
+    		got:name ?motherName.
+    ?child got:name ?childName .
+} groupby ?motherName
+having ((count (?childName))>=2)
+	orderby ?motherName
+
+
+
+# ************************************************************* 
+
+# Query Number 15
+
+#all the battels of house Stark
+PREFIX got: <http://www.dei.unipd.it/database2/gotOntology#>
+select ?battleName where {
+	?house got:defenderHouseIn | got:attackerHouseIn ?battle ;
+                              got:name ?houseName .
+    ?battle got:name ?battleName .
+    filter(REGEX(?houseName , "Stark")).
+
+} limit 100
+
+
+# ************************************************************* 
+
+# Query Number 16
+
+# name and house of people with ironborn culture
+
+PREFIX got: <http://www.dei.unipd.it/database2/gotOntology#>
+select ?name ?houseName where {
+	?char got:culture ?culture ;
+            got:name ?name.
+	?ho got:hasHouse ?house .
+    ?house got:name ?houseName.
+    filter(REGEX(?culture ,"Ironborn"))
+
+}
+order by ?houseName
+limit 10
+
+# ************************************************************* 
+
+# Query Number 17
+
+#number of characters involved in each book ordered by count
+PREFIX got: <http://www.dei.unipd.it/database2/gotOntology#>
+select ?book (count (?Characters) as ?number) where {
+	?character got:apearedIn ?book ;
+            got:name ?Characters .
+
+} group by ?book
+order by ?number
+
+
+
+
+# ************************************************************* 
+
+# Query Number 18 
+
+# Name of all of the houses in the region that battles occurred
+PREFIX got: <http://www.dei.unipd.it/database2/gotOntology#>
+select  ?regionName ?houseName where {
+	?battle got:occurredIn ?region .
+    ?region got:name ?regionName .
+    ?house got:locatedIn ?region ;
+           got:name ?houseName .
+} GROUP BY (?regionName)(?houseName)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
