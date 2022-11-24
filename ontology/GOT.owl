@@ -1,0 +1,317 @@
+@prefix : <http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.dei.unipd.it/database2/gotOntology> .
+
+<http://www.dei.unipd.it/database2/gotOntology> rdf:type owl:Ontology ;
+                                                 owl:versionIRI <http://www.dei.unipd.it/database2/gotOntology> ;
+                                                 owl:imports <http://xmlns.com/foaf/0.1/> ;
+                                                 rdfs:comment "An ontology that models \"Game of Thrones\" characters and their attributes and battles. It is done as a group project for \"Database 2\" course at University of Padova, A.Y. 2022-23"@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#appearedIn
+:appearedIn rdf:type owl:ObjectProperty ;
+            rdfs:domain :Character ;
+            rdfs:range :Book .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#attackerCommanderOf
+:attackerCommanderOf rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :defenderCommanderOf ;
+                     rdfs:domain :Character ;
+                     rdfs:range :Battle .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#attackerHouseIn
+:attackerHouseIn rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :defenderHouseIn ;
+                 rdfs:domain :House ;
+                 rdfs:range :Battle .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#attackerKingOf
+:attackerKingOf rdf:type owl:ObjectProperty ;
+                owl:inverseOf :defenderKingOf ;
+                rdfs:domain :Character ;
+                rdfs:range :Battle ;
+                owl:propertyDisjointWith :defenderCommanderOf ,
+                                         :defenderKingOf .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#defenderCommanderOf
+:defenderCommanderOf rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Character ;
+                     rdfs:range :Battle .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#defenderHouseIn
+:defenderHouseIn rdf:type owl:ObjectProperty ;
+                 rdfs:domain :House ;
+                 rdfs:range :Battle .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#defenderKingOf
+:defenderKingOf rdf:type owl:ObjectProperty ;
+                rdfs:domain :Character ;
+                rdfs:range :Battle .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#fatherOf
+:fatherOf rdf:type owl:ObjectProperty ,
+                   owl:InverseFunctionalProperty ,
+                   owl:AsymmetricProperty ,
+                   owl:IrreflexiveProperty ;
+          rdfs:domain :Character ;
+          rdfs:range :Character ;
+          owl:propertyDisjointWith :motherOf ,
+                                   :spouseOf .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#founderOf
+:founderOf rdf:type owl:ObjectProperty ;
+           owl:inverseOf :hasFounder ;
+           rdf:type owl:InverseFunctionalProperty ;
+           rdfs:domain :Character ;
+           rdfs:range :House .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#hasFounder
+:hasFounder rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :House ;
+            rdfs:range :Character .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#hasHouse
+:hasHouse rdf:type owl:ObjectProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Character ;
+          rdfs:range :House .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#heirOf
+:heirOf rdf:type owl:ObjectProperty ,
+                 owl:InverseFunctionalProperty ,
+                 owl:AsymmetricProperty ,
+                 owl:IrreflexiveProperty ;
+        rdfs:domain :Character ;
+        rdfs:range :Character .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#isAbout
+:isAbout rdf:type owl:ObjectProperty ,
+                  owl:FunctionalProperty ,
+                  owl:SymmetricProperty ;
+         rdfs:domain :WikidataProfile ;
+         rdfs:range :Character .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#locatedIn
+:locatedIn rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :Battle ;
+           rdfs:range :Region .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#motherOf
+:motherOf rdf:type owl:ObjectProperty ,
+                   owl:InverseFunctionalProperty ,
+                   owl:AsymmetricProperty ,
+                   owl:IrreflexiveProperty ;
+          rdfs:domain :Character ;
+          rdfs:range :Character ;
+          owl:propertyDisjointWith :spouseOf .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#occurredIn
+:occurredIn rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Battle ;
+            rdfs:range :Region .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#spouseOf
+:spouseOf rdf:type owl:ObjectProperty ,
+                   owl:SymmetricProperty ,
+                   owl:IrreflexiveProperty ;
+          rdfs:domain :Character ;
+          rdfs:range :Character .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#age
+:age rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Character ;
+     rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#attackerOutcome
+:attackerOutcome rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Battle ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#attackerSize
+:attackerSize rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Battle ;
+              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#battleType
+:battleType rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Battle ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#birthDate
+:birthDate rdf:type owl:DatatypeProperty ;
+           rdfs:domain <http://www.w3.org/2000/10/swap/pim/contact#Person> ;
+           rdfs:range xsd:integer ;
+           rdfs:comment "The maesters of the Citadel who keep the histories of Westeros have used Aegon's Conquest as their touchstone for the past three hundred years. Birth, deaths, battles, and other events are dated either AC (After the Conquest) [positive values in dataset] or BC (Before the Conquest) [negative values]."^^xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#blazon
+:blazon rdf:type owl:DatatypeProperty ;
+        rdfs:domain :House ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#culture
+:culture rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Character ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#deathDate
+:deathDate rdf:type owl:DatatypeProperty ;
+           rdfs:domain <http://www.w3.org/2000/10/swap/pim/contact#Person> ;
+           rdfs:range xsd:integer ;
+           rdfs:comment "The maesters of the Citadel who keep the histories of Westeros have used Aegon's Conquest as their touchstone for the past three hundred years. Birth, deaths, battles, and other events are dated either AC (After the Conquest) [positive values in dataset] or BC (Before the Conquest) [negative values]."^^xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#defenderSize
+:defenderSize rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Battle ;
+              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#gender
+:gender rdf:type owl:DatatypeProperty ;
+        rdfs:domain <http://www.w3.org/2000/10/swap/pim/contact#Person> ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#isAlive
+:isAlive rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Character ;
+         rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#isNoble
+:isNoble rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Character ;
+         rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#isPopular
+:isPopular rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Character ;
+           rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#location
+:location rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Battle ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#name
+:name rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain [ rdf:type owl:Class ;
+                    owl:unionOf ( :Battle
+                                  :House
+                                  :Region
+                                  <http://www.w3.org/2000/10/swap/pim/contact#Person>
+                                )
+                  ] ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#popularity
+:popularity rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Character ;
+            rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#sigil
+:sigil rdf:type owl:DatatypeProperty ;
+       rdfs:domain :House ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Character ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#year
+:year rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Battle ;
+      rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Battle
+:Battle rdf:type owl:Class ;
+        owl:disjointWith :Book ,
+                         :Character ,
+                         :House ,
+                         :Region .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Book
+:Book rdf:type owl:Class ;
+      owl:disjointWith :Character ,
+                       :House ,
+                       :Region .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Character
+:Character rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.w3.org/2000/10/swap/pim/contact#Person> ;
+           owl:disjointWith :House ,
+                            :Region .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#House
+:House rdf:type owl:Class ;
+       owl:disjointWith :Region .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#Region
+:Region rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/saeed/ontologies/2022/10/GOT#WikidataProfile
+:WikidataProfile rdf:type owl:Class .
+
+
+###  http://www.w3.org/2000/10/swap/pim/contact#Person
+<http://www.w3.org/2000/10/swap/pim/contact#Person> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
